@@ -55,6 +55,9 @@ Downloads, access, and services
     * - Atmosphere access
       - You must have access to Atmosphere
       - `Request Access <https://user.cyverse.org/>`_
+    * - Jetstream access (Optional)
+      - You must have registered with XSEDE
+      - `Request Access <https://portal.xsede.org/my-xsede#/guest>`_
     * - Cyberduck
       - Standalone software for upload/download to Data Store
       - `Download <https://cyberduck.io/>`_
@@ -81,7 +84,7 @@ Platform(s)
       - `Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Data+Store+Table+of+Contents>`_
       - `Guide <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`__
     * - Discovery Environment
-      - Web/Point-and-click
+      - Jupyter Notebooks / non-interactive Docker jobs
       - `Discovery Environment <https://de.cyverse.org/de/>`_
       - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
       - `Guide <http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/>`__
@@ -90,21 +93,7 @@ Platform(s)
       - `Atmosphere <https://atmo.cyverse.org>`_
       - `Atmosphere Manual <https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents>`_
       - `Guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`__
-    * - BisQue
-      - Web/Point-and-click and/or Command-line (API)
-      - `BisQue <https://bisque.cyverse.org/client_service/>`_
-      - `BisQue Manual <https://wiki.cyverse.org/wiki/display/BIS>`_
-      - `Guide <>`__
-    * - DNA Subway
-      - Web/Point-and-click
-      - `DNA Subway <https://dnasubway.cyverse.org/>`_
-      - `DNA Subway Manual <http://dnasubway.cyverse.org/files/pdf/DNA_Subway_Guide.pdf>`_
-      - `Guide <https://cyverse-dnasubway-guide.readthedocs-hosted.com/en/latest/>`__
-    * - Agave API
-      - Command-line (API)
-      - `Agave API <https://agaveapi.co>`_
-      - `Live Docs <https://agaveapi.co>`_
-      - `Guide <>`__
+    
 
 Application(s) used
 ~~~~~~~~~~~~~~~~~~~
@@ -116,34 +105,52 @@ Application(s) used
 .. list-table::
     :header-rows: 1
 
-    * - App name
+    * - Name
       - Version
-      - Description
-      - App link
-      - Notes/other links
-    * - Muscle
-      - 3.8.31
-      - Multiple sequence aligner
-      -	`DE App link <https://de.iplantcollaborative.org/de/?type=apps&app-id=9b41c9e4-5031-4a49-b1cb-c471335df16e>`_
-      - - `Original Muscle documentation <http://www.drive5.com/muscle/manual/>`_
-      	- `DE Dockerfile <http://wwww.cyverse.org>`_
-
+      - Location
+      - App Link
+      - Notes/other
+    * - Jupyter Notebooks
+      - 0.1
+      - TBA
+      - TBA
+      - TBA
+   
 **Atmosphere Image(s):**
 
 .. list-table::
     :header-rows: 1
 
-    * - Image name
+    * - Image Name
       - Version
       - Description
       - Link
-      - Notes/other links
-    * - CyVerse CentOS 6.8 GUI Base
-      - 1.0
-      - base image CentOS 6.8 with GNOME GUI
-      -	`Image <https://atmo.cyverse.org/application/images/1384>`_
-      -
+    * - Ubuntu 16.04 GUI
+      - 2.1
+      - Ubuntu 16.04 GUI XFCE Base
+      -	`Image <https://atmo.cyverse.org/application/images/1453>`_
+    * - Ubuntu 16.04 non-GUI
+      - 1.6
+      - Ubuntu 16.04 non-GUI Base
+      -	`Image <https://atmo.cyverse.org/application/images/1420>`_
 
+**Jetstream Image(s):**
+
+.. list-table::
+    :header-rows: 1
+
+    * - Image Name
+      - Version
+      - Description
+      - Link
+    * - Ubuntu 16.04 GUI
+      - 1.13
+      - Ubuntu 16.04 LTS Development + GUI support + Docker
+      -	`Image <https://use.jetstream-cloud.org/application/images/107>`_
+    * - Ubuntu 14.04 GUI
+      - 1.17
+      - Base Ubuntu 14.04.3 + Xfce + Xfce-goodies, firefox, icon sets and themes
+      -	`Image <https://use.jetstream-cloud.org/application/images/54>`_
 
 
 Input and example data
@@ -170,7 +177,7 @@ Input and example data
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/neon_data_science>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
