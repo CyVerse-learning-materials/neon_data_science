@@ -82,12 +82,20 @@ You will be queried to set up your `irods_environment.json`
 
 Enter the following:
 
-|statement|input|  
-|---------|-----|
-| DNS | *data.cyverse.org* |
-|port number|*1247*|
-|user name| *your user name*|
-|zone|*iplant*|
+.. list-table::
+    :header-rows: 1
+    
+    * - statement
+      - input
+    * - DNS
+      - *data.cyverse.org*
+    * - port
+      - *1247*
+    * - username
+      - *your CyVerse username*
+    * - zone
+      - *iplant*
+      
 
 .. Note::
 
