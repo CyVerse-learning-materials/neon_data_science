@@ -121,18 +121,16 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 	.. code-block:: bash
 		sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
-
-
-	Install [additional Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
+		
+	Install additional Jupyter `kernels<https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
 
 	.. code-block:: bash
 		sudo add-apt-repository ppa:chronitis/jupyter
+
 	.. code-block:: bash
 		sudo apt-get update
 		conda install -c anaconda ipykernel
 		sudo apt-get install irkernel ijavascript
-
-----
 
 **Description of output and results**
 
