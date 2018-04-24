@@ -4,27 +4,16 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Starting a VM
--------------
+Launching a Data Science Virtual Machine
+----------------------------------------
 
-**Description: Provision your VM for analyzing NEON data**
+**Description: Provision VM for analyzing NEON AOP data**
 
 ..
 	#### Comment: short text description goes here ####
 
 ----
 
-**Input Data:**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Input
-      - Description
-      - Example
-    * -
-      -
-      -
 
 *Start a Cloud Instance*
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,29 +43,21 @@ Starting a VM
 
 	- Right click with your mouse or double tap fingers on touchpad to paste in the web shell or Desktop
 
-*Clone this Repository onto the VM*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. Change into a directory (`cd`) you're comfortable installing software into and have `sudo` privileges.
-
-2. `git clone` the Jupyter Notebook examples repository onto your VM:
-
-.. code-block:: bash
-	git clone https://github.com/tyson-swetnam/QUBES_NEON.git
-
 *EZ Installation*
 ~~~~~~~~~~~~~~~~~
 
-For more detail visit CyVerse Learning Center's [Data Science Quickstart Tutorial](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/). CyVerse has set up an `ez` installation for Docker, Singularity, and Anaconda (Jupyter Notebooks and Lab).
+For more details visit our [Data Science Quickstart Tutorial](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/) on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
 
-1. Install Anaconda with Python3 (Featured instances on Atmosphere and Jetstream)
+If you're on an instance which already has Anaconda installed, you'll still need to re-run `ez` to restart the Anaconda virtual enivronment. 
+
+1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
 
 .. code-block:: bash
 	ezj
 
-2. Once the installation completes, Jupyter Notebook will be running on the VM. 
+2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
 
-Click the link to open a basic notebook. You can launch Jupyter Lab by exiting the notebook and typing `jupyter lab` - but this will allow Lab to only be available on the localhost, with no way to connect from a remote terminal.
+3. Click the link to open a basic notebook. 
 
 .. Note::
 
@@ -88,24 +69,30 @@ Click the link to open a basic notebook. You can launch Jupyter Lab by exiting t
 
 	- re-attach screen: `tmux attach -t <session id #>`
 
-3. Exit the notebook by pressing `ctrl + c` twice, and then start a `Jupyter Lab (BETA)<https://github.com/jupyterlab/jupyterlab>`_.
+4. You can launch Jupyter Lab by exiting the notebook and typing `jupyter lab` - but this will allow Lab to only be available on the localhost, with no way to connect from a remote terminal. Exit the notebook by pressing `ctrl + c` twice, and then start a `JupyterLab<https://github.com/jupyterlab/jupyterlab>`_.
 
-To create a secure connection to Jupyter Lab, you will need to start the lab and open an `ssh` tunnel.
+*Establishing a Secure Connection*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. On the VM start the Lab in terminal (don't forget to use `tmux`)
 
 .. code-block:: bash
 	jupyter lab --no-browser --ip=127.0.0.1 --port=8888
 
-Next, open a new terminal tab or window. 
+**Option: 1 SSH tunnel**
+
+2. Open a new terminal on your localhost or Web Shell tab in browser. 
 
 .. code-block:: bash
 	ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>
 
-Enter your password and the terminal should stop responding
+	Enter your password. The terminal should stop responding after this.
 
-Open a new browser tab and open `localhost:8888`
+3. In your browser, open a new tab and go to `http://localhost:8888`
 
+**Caddy**
 
-4. Yet another option to set up a secure connection using Caddyfile
+1. On the VM in a terminal:
 
 .. code-block:: bash
 	echo "$(hostname)
@@ -114,7 +101,9 @@ Open a new browser tab and open `localhost:8888`
 	curl https://getcaddy.com | bash -s personal http.nobots
 	caddy
 
-Caddy will output a secure `https://` url for the Atmosphere VM which you can then connect to.
+2. Caddy will output a secure url `https://` for the Atmosphere VM which you can then connect in a new browser tab.
+
+3. Copy / Paste the `https://` url into a new browser tab.
 
 ..
 	#### Comment: Suggested style guide:
@@ -126,23 +115,28 @@ Caddy will output a secure `https://` url for the Atmosphere VM which you can th
 	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
 	####
 
-**Output/Results**
+.. Note::
 
-.. list-table::
-    :header-rows: 1
+	To install your own packages you'll need to change ownership of the Anaconda installation:
 
-    * - Output
-      - Description
-      - Example
-    * -
-      -
-      -
+	.. code-block:: bash
+		sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
 
+
+	Install [additional Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
+
+	.. code-block:: bash
+		sudo add-apt-repository ppa:chronitis/jupyter
+	.. code-block:: bash
+		sudo apt-get update
+		conda install -c anaconda ipykernel
+		sudo apt-get install irkernel ijavascript
 
 ----
 
 **Description of output and results**
 
+Congratulations - you've got a Virtual Machine ready to do some serious data science!
 
 ----
 
