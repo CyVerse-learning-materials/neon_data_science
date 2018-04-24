@@ -53,7 +53,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
 
-``ezj``
+	``ezj``
 
 2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
 
@@ -76,13 +76,13 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 1. On the VM start the Lab in terminal (don't forget to use `tmux`)
 	
-``jupyter lab --no-browser --ip=127.0.0.1 --port=8888``
+	``jupyter lab --no-browser --ip=127.0.0.1 --port=8888``
 
 **Option 1: SSH tunnel**
 
 2. Open a new terminal on your localhost or Web Shell tab in browser. 
 
-``ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>``
+	``ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>``
 
 	Enter your password. The terminal should stop responding after this.
 
@@ -92,12 +92,13 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 2. In the terminal:
 
-    .. code:: bash
+``
 	echo "$(hostname)
 	proxy / 127.0.0.1:8888
 	" > Caddyfile
 	curl https://getcaddy.com | bash -s personal http.nobots
 	caddy
+``
 
 Caddy will output a secure url `https://` for the Atmosphere VM which you can then connect in a new browser tab.
 
