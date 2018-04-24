@@ -45,7 +45,7 @@ Students will be allowed to work in small teams (paired programming) to develop 
 
 **Value**: Improve classification (bare earth, vegetation, infrastructure) of lidar and visualize data anywhere. 
 
-* Introduce[PDAL](https://www.pdal.io/) (w/ Docker) for lidar classification. 
+* Introduce [PDAL](https://www.pdal.io/) (w/ Docker) for lidar classification. 
   * CLI executions.
   * JSON scripting.
   * Colorize lidar data with aerial orthophotography
