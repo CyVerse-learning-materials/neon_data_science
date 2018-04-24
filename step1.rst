@@ -46,7 +46,7 @@ Launching a Data Science Virtual Machine
 *EZ Installation*
 ~~~~~~~~~~~~~~~~~
 
-For more details visit our [Data Science Quickstart Tutorial](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/) on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
+For more details visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
 
 If you're on an instance which already has Anaconda installed, you'll still need to re-run `ez` to restart the Anaconda virtual enivronment. 
 
@@ -69,7 +69,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 	- re-attach screen: `tmux attach -t <session id #>`
 
-4. You can launch Jupyter Lab by exiting the notebook and typing `jupyter lab` - but this will allow Lab to only be available on the localhost, with no way to connect from a remote terminal. Exit the notebook by pressing `ctrl + c` twice, and then start a `JupyterLab<https://github.com/jupyterlab/jupyterlab>`_.
+4. You can launch Jupyter Lab by exiting the notebook and typing `jupyter lab` - but this will allow Lab to only be available on the localhost, with no way to connect from a remote terminal. Exit the notebook by pressing `ctrl + c` twice, and then start a `Jupyter Lab <https://github.com/jupyterlab/jupyterlab>`_.
 
 *Establishing a Secure Connection*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -122,7 +122,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 	.. code-block:: bash
 		sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
 		
-	Install additional Jupyter `kernels<https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
+	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
 
 	.. code-block:: bash
 		sudo add-apt-repository ppa:chronitis/jupyter
