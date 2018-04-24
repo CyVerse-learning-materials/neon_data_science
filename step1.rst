@@ -52,8 +52,8 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 
 1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
-
-	``ezj``
+	.. code-block :: bash
+		ezj
 
 2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
 
@@ -75,30 +75,30 @@ If you're on an instance which already has Anaconda installed, you'll still need
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. On the VM start the Lab in terminal (don't forget to use `tmux`)
-	
-	``jupyter lab --no-browser --ip=127.0.0.1 --port=8888``
+	.. code-block :: bash	
+		jupyter lab --no-browser --ip=127.0.0.1 --port=8888
 
 **Option 1: SSH tunnel**
 
 2. Open a new terminal on your localhost or Web Shell tab in browser. 
+	.. code-block :: bash
+		ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>
 
-	``ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>``
-
-	Enter your password. The terminal should stop responding after this.
+	Enter your password when prompted. 
+	
+	The terminal should stop responding after this.
 
 3. In your browser, open a new tab and go to ``http://localhost:8888``
 
 **Option 2: Caddy**
 
 2. In the terminal:
-
-``
-	echo "$(hostname)
-	proxy / 127.0.0.1:8888
-	" > Caddyfile
-	curl https://getcaddy.com | bash -s personal http.nobots
-	caddy
-``
+	.. code-block :: bash
+		echo "$(hostname)
+		proxy / 127.0.0.1:8888
+		" > Caddyfile
+		curl https://getcaddy.com | bash -s personal http.nobots
+		caddy
 
 Caddy will output a secure url `https://` for the Atmosphere VM which you can then connect in a new browser tab.
 
@@ -117,15 +117,15 @@ Caddy will output a secure url `https://` for the Atmosphere VM which you can th
 .. Note::
 
 	To install your own packages you'll need to change ownership of the Anaconda installation:
-		
-		``sudo chown $(id -u):$(id -g) /opt/anaconda3 -R``
+		.. code-block :: bash
+			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
 		
 	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
-
-		``sudo add-apt-repository ppa:chronitis/jupyter``
-		``sudo apt-get update``
-		``conda install -c anaconda ipykernel``
-		``sudo apt-get install irkernel ijavascript``
+		.. code-block :: bash
+			sudo add-apt-repository ppa:chronitis/jupyter
+			sudo apt-get update
+			conda install -c anaconda ipykernel
+			sudo apt-get install irkernel ijavascript
 
 *Installing RStudio-Server*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
