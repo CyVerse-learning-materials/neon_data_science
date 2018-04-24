@@ -24,7 +24,8 @@ Goal
 	:maxdepth: 2
 
 	Tutorial home <self>
-	Step One <step1.rst>
+	Launching a Data Science Virtual Machine <step1.rst>
+	Data Download <step2.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
