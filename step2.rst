@@ -34,22 +34,21 @@ Data Download
     * - Cyverse Data Store
       - iRODS
       - 
-    *   
+    * - CyberDuck
+      - File Share UI
 
 *Google Drive Client*
 ~~~~~~~~~~~~~~~~~~~~
 
 Dependency: `Node.js 5+ <https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04>`_ 
 
-.. code-block:: bash
-  conda install -c conda-forge nodejs
+  ``conda install -c conda-forge nodejs``
 
 1. Install `Google Drive to Jupyter Lab <https://github.com/jupyterlab/jupyterlab-google-drive>`_
 
-Google Drive requires port `8888` or `8889` with port forwarding to work
+Google Drive requires port ``8888`` or ``8889`` with port forwarding to work
 
-.. code-block:: bash
-  jupyter labextension install @jupyterlab/google-drive
+  ``jupyter labextension install @jupyterlab/google-drive``
 
 *iRODS iCommands Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,17 +65,17 @@ CyVerse has a remote client for Jupyter Lab similar to the Google Drive plugin
 
 1. Install iCommands on the VM
 
-.. code-block:: bash
+``
   wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -
   echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/renci-irods.list
   sudo apt-get update
 
   sudo apt-get install irods-icommands
+``
 
 2. Initialize iRODS-iCommands
 
-.. code-block:: bash
-  iinit
+  ``iinit``
 
 You will be queried to set up your `irods_environment.json`
 
@@ -103,12 +102,11 @@ Enter the following:
 
   Download `i-commands-auto.bash <https://pods.iplantcollaborative.org/wiki/download/attachments/6720192/i-commands-auto.bash>`_
 
-  In your home directory, rename `i-commands-auto.bash` to `.i-commands-auto.bash`
+  In your home directory, rename ``i-commands-auto.bash`` to ``.i-commands-auto.bash``
 
-  In your `.bashrc` or `.bash_profile`, enter the following:
+  In your ``.bashrc`` or ``.bash_profile``, enter the following:
 
-  .. code-block:: bash
-    source .i-commands-auto.bash
+    ``source .i-commands-auto.bash``
 
 *3rd Party Software*
 ~~~~~~~~~~~~~~~~~~~~
