@@ -46,7 +46,7 @@ Launching a Data Science Virtual Machine
 *EZ Installation*
 ~~~~~~~~~~~~~~~~~
 
-For more details visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
+For more details visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_ on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
 
 If you're on an instance which already has Anaconda installed, you'll still need to re-run `ez` to restart the Anaconda virtual enivronment. 
 
