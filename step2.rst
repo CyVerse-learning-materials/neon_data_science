@@ -36,6 +36,7 @@ Data Download
       - 
     * - CyberDuck
       - File Share UI
+      -
 
 *Google Drive Client*
 ~~~~~~~~~~~~~~~~~~~~
@@ -65,13 +66,13 @@ CyVerse has a remote client for Jupyter Lab similar to the Google Drive plugin
 
 1. Install iCommands on the VM
 
-``
+.. code-block::bash
+
   wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -
   echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/renci-irods.list
   sudo apt-get update
-
   sudo apt-get install irods-icommands
-``
+
 
 2. Initialize iRODS-iCommands
 
@@ -94,7 +95,7 @@ Enter the following:
       - *your CyVerse username*
     * - zone
       - *iplant*
-      
+     
 
 .. Note::
 
