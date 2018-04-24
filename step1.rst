@@ -79,7 +79,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 .. code-block:: bash
 	jupyter lab --no-browser --ip=127.0.0.1 --port=8888
 
-**Option: 1 SSH tunnel**
+**Option 1: SSH tunnel**
 
 2. Open a new terminal on your localhost or Web Shell tab in browser. 
 
@@ -90,9 +90,9 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 3. In your browser, open a new tab and go to `http://localhost:8888`
 
-**Caddy**
+**Option 2: Caddy**
 
-1. On the VM in a terminal:
+2. In the terminal:
 
 .. code-block:: bash
 	echo "$(hostname)
@@ -101,7 +101,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 	curl https://getcaddy.com | bash -s personal http.nobots
 	caddy
 
-2. Caddy will output a secure url `https://` for the Atmosphere VM which you can then connect in a new browser tab.
+Caddy will output a secure url `https://` for the Atmosphere VM which you can then connect in a new browser tab.
 
 3. Copy / Paste the `https://` url into a new browser tab.
 
