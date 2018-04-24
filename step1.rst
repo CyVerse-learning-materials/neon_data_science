@@ -28,6 +28,7 @@ Launching a Data Science Virtual Machine
 3. Log into the Apache Guacamole Web Shell to access a terminal, or use ``ssh`` on your local machine:
 
 .. code-block:: bash
+
 	ssh CyVerseUserName@<INSTANCE-IP-ADDRESS>
 
 .. Note:: 
@@ -52,7 +53,9 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 
 1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
+
 	.. code-block :: bash
+	
 		ezj
 
 2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
@@ -75,13 +78,17 @@ If you're on an instance which already has Anaconda installed, you'll still need
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. On the VM start the Lab in terminal (don't forget to use `tmux`)
+
 	.. code-block :: bash	
+	
 		jupyter lab --no-browser --ip=127.0.0.1 --port=8888
 
 **Option 1: SSH tunnel**
 
 2. Open a new terminal on your localhost or Web Shell tab in browser. 
+
 	.. code-block :: bash
+	
 		ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>
 
 	Enter your password when prompted. 
@@ -93,7 +100,9 @@ If you're on an instance which already has Anaconda installed, you'll still need
 **Option 2: Caddy**
 
 2. In the terminal:
+
 	.. code-block :: bash
+	
 		echo "$(hostname)
 		proxy / 127.0.0.1:8888
 		" > Caddyfile
@@ -117,11 +126,15 @@ Caddy will output a secure url `https://` for the Atmosphere VM which you can th
 .. Note::
 
 	To install your own packages you'll need to change ownership of the Anaconda installation:
+	
 		.. code-block :: bash
+		
 			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
 		
 	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
+	
 		.. code-block :: bash
+		
 			sudo add-apt-repository ppa:chronitis/jupyter
 			sudo apt-get update
 			conda install -c anaconda ipykernel
