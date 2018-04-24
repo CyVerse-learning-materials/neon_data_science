@@ -132,6 +132,21 @@ Caddy will output a secure url `https://` for the Atmosphere VM which you can th
 		conda install -c anaconda ipykernel
 		sudo apt-get install irkernel ijavascript
 
+*Installing RStudio-Server*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+RStudio can be installed in several ways. 
+
+First, you can follow the RStudio-Server `instructions for Linux <https://www.rstudio.com/products/rstudio/download-server/>`_
+
+Second, you can use Docker (following the same `ez` `documentation <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/index.html>`_ as for Anaconda).
+
+We suggest using containers from Docker Hub `Rocker <https://hub.docker.com/r/rocker/geospatial/>`_
+
+Third, you can use Anaconda
+
+`Instructions for Anaconda <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/rstudio.html>`_ 
+
 **Description of output and results**
 
 Congratulations - you've got a Virtual Machine ready to do some serious data science!
