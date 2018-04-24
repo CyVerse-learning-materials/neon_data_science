@@ -3,22 +3,23 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-NEON Data Science
-=================
+NEON Data Science Institute 2018
+================================
 
 ..
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
     sharing data ####
 
-Goal
-----
+Goal: Instruction on CyVerse virtual machines for data processing and analysis
+------------------------------------------------------------------------------
 
 ..
     #### Comment: Avoid covering upstream and downstream steps that are not explicitly and
     necessarily part of the tutorial - write or link to separate quick
     starts/tutorials for those parts ####
 
-----
+Contents
+--------
 
 .. toctree::
 	:maxdepth: 2
