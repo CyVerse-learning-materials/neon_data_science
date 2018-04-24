@@ -25,7 +25,7 @@ Launching a Data Science Virtual Machine
 
 2. Allow the instance to reach 'active' status. Instances typically take 3-7 minutes to boot up the first time.
 
-3. Log into the Apache Guacamole Web Shell to access a terminal, or use `ssh` on your local machine:
+3. Log into the Apache Guacamole Web Shell to access a terminal, or use ``ssh`` on your local machine:
 
 .. code-block:: bash
 	ssh CyVerseUserName@<INSTANCE-IP-ADDRESS>
@@ -50,10 +50,10 @@ For more details visit our `Data Science Quickstart Tutorial <https://cyverse-ez
 
 If you're on an instance which already has Anaconda installed, you'll still need to re-run `ez` to restart the Anaconda virtual enivronment. 
 
+
 1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
 
-.. code-block:: bash
-	ezj
+``ezj``
 
 2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
 
@@ -65,9 +65,9 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 	- detach screen: `ctrl + b` then `ctrl + d`
 
-	- list tmux sessions: `tmux ls`
+	- list tmux sessions: ``tmux ls``
 
-	- re-attach screen: `tmux attach -t <session id #>`
+	- re-attach screen: ``tmux attach -t <session id #>``
 
 4. You can launch Jupyter Lab by exiting the notebook and typing `jupyter lab` - but this will allow Lab to only be available on the localhost, with no way to connect from a remote terminal. Exit the notebook by pressing `ctrl + c` twice, and then start a `Jupyter Lab <https://github.com/jupyterlab/jupyterlab>`_.
 
@@ -75,26 +75,24 @@ If you're on an instance which already has Anaconda installed, you'll still need
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. On the VM start the Lab in terminal (don't forget to use `tmux`)
-
-.. code-block:: bash
-	jupyter lab --no-browser --ip=127.0.0.1 --port=8888
+	
+``jupyter lab --no-browser --ip=127.0.0.1 --port=8888``
 
 **Option 1: SSH tunnel**
 
 2. Open a new terminal on your localhost or Web Shell tab in browser. 
 
-.. code-block:: bash
-	ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>
+``ssh -nNT -L 8888:localhost:8888 CyVerseUserName@<IPADDRESS>``
 
 	Enter your password. The terminal should stop responding after this.
 
-3. In your browser, open a new tab and go to `http://localhost:8888`
+3. In your browser, open a new tab and go to ``http://localhost:8888``
 
 **Option 2: Caddy**
 
 2. In the terminal:
 
-.. code-block:: bash
+    .. code:: bash
 	echo "$(hostname)
 	proxy / 127.0.0.1:8888
 	" > Caddyfile
@@ -118,19 +116,15 @@ Caddy will output a secure url `https://` for the Atmosphere VM which you can th
 .. Note::
 
 	To install your own packages you'll need to change ownership of the Anaconda installation:
-
-	.. code-block:: bash
-		sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
+		
+		``sudo chown $(id -u):$(id -g) /opt/anaconda3 -R``
 		
 	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
 
-	.. code-block:: bash
-		sudo add-apt-repository ppa:chronitis/jupyter
-
-	.. code-block:: bash
-		sudo apt-get update
-		conda install -c anaconda ipykernel
-		sudo apt-get install irkernel ijavascript
+		``sudo add-apt-repository ppa:chronitis/jupyter``
+		``sudo apt-get update``
+		``conda install -c anaconda ipykernel``
+		``sudo apt-get install irkernel ijavascript``
 
 *Installing RStudio-Server*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
