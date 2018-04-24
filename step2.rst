@@ -117,8 +117,8 @@ Enter the following:
 	
 		source .i-commands-auto.bash
 
-*3rd Party Software*
-~~~~~~~~~~~~~~~~~~~~
+*CyberDuck*
+~~~~~~~~~~~
 
 `Using CyVerse and CyberDuck <http://cyberduck-quickstart.readthedocs.io/en/latest/#>`_
 
