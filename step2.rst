@@ -42,13 +42,17 @@ Data Download
 ~~~~~~~~~~~~~~~~~~~~
 
 Dependency: `Node.js 5+ <https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04>`_ 
+
 	.. code-block :: bash
+	
 		conda install -c conda-forge nodejs
 
 1. Install `Google Drive to Jupyter Lab <https://github.com/jupyterlab/jupyterlab-google-drive>`_
 
 Google Drive requires port ``8888`` or ``8889`` with port forwarding to work
+
 	.. code-block :: bash
+	
 		jupyter labextension install @jupyterlab/google-drive
 
 *iRODS iCommands Client*
@@ -75,7 +79,9 @@ CyVerse has a remote client for Jupyter Lab similar to the Google Drive plugin
 
 
 2. Initialize iRODS-iCommands
+
 	.. code-block :: bash
+	
 		  iinit
 
 You will be queried to set up your `irods_environment.json`
@@ -106,7 +112,9 @@ Enter the following:
   In your home directory, rename ``i-commands-auto.bash`` to ``.i-commands-auto.bash``
 
   In your ``.bashrc`` or ``.bash_profile``, enter the following:
+  
 	.. code-block :: bash
+	
 		source .i-commands-auto.bash
 
 *3rd Party Software*
