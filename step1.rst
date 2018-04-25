@@ -139,8 +139,8 @@ you can ssh in with your CyVerse username on the IP address of the machine
 
   It is advisable to delete the machine if you are not planning to use it in future to save valuable resources. However if you want to use it in future, you can suspend it.
 
-*EZ Installation*
-~~~~~~~~~~~~~~~~~
+*EZ Installation of Project Jupyter*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For more details visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_ on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
 
@@ -149,13 +149,72 @@ If you're on an instance which already has Anaconda installed, you'll still need
 1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
 
 	.. code-block :: bash
-	
+
 		ezj
 
 2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
 
 3. Click the link to open a basic notebook. 
 
+.. Advanced installations::
+
+	To install your own packages you'll need to change ownership of the Anaconda installation:
+	
+		.. code-block :: bash
+		
+			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
+		
+	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
+	
+		.. code-block :: bash
+		
+			sudo add-apt-repository ppa:chronitis/jupyter
+			sudo apt-get update
+			conda install -c anaconda ipykernel
+			sudo apt-get install irkernel ijavascript
+
+*Installing RStudio-Server*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+RStudio can be installed in several ways. 
+
+First, you can follow the RStudio-Server `instructions for Linux <https://www.rstudio.com/products/rstudio/download-server/>`_
+
+Second, you can use Docker (following the same `ez` `documentation <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/index.html>`_ as for Anaconda). We suggest using containers from Docker Hub `Rocker <https://hub.docker.com/r/rocker/geospatial/>`_ on the instance.
+
+Third, you can use `Anaconda <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/rstudio.html>`_ 
+
+Here we are going to use ``ezj`` to install both Anaconda (Jupyter) and R
+
+	.. code-block :: bash
+		
+		ezj -R
+
+This will trigger the Ansible playbook to install ``r-base``, ``r-essentials``, and a few other commonly used R Data Science packages.
+
+After ``ezj -R`` has finished, you can install RStudio-Server
+
+	.. code-block :: bash
+	
+		export PATH="/opt/anaconda3/bin:$PATH
+		sudo chown $(id -u):$(id -g) /opt/anaconda3/ -R
+		echo "export RSTUDIO_WHICH_R='/opt/anaconda3/bin/R'" >> ~/.bash_profile
+		sudo apt-get install gdebi-core
+		wget https://download2.rstudio.org/rstudio-server-1.1.447-amd64.deb
+		sudo gdebi rstudio-server-1.1.447-amd64.deb
+
+The installation of RStudio-Server is going to fail because we haven't told it which R to use. Because we are using Anaconda's installation of R, and not the basic installation of R, we have to reassign RStudio to look for Anaconda
+
+	.. code-block :: bash
+	
+		sudo sh -c 'echo "rsession-which-r=/opt/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'
+
+Restart the server
+
+	.. code-block :: bash
+	
+		sudo rstudio-server start
+		
 .. Note::
 
 	To ensure your session doesn't die when you close your terminal use `tmux` or `screen` to start your remote sessions and to detach the screen before exiting.
@@ -216,38 +275,6 @@ Caddy will output a secure url `https://` for the Atmosphere VM which you can th
 	4. Primary menu titles in double quotes: Under "Input" choose...
 	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
 	####
-
-.. Note::
-
-	To install your own packages you'll need to change ownership of the Anaconda installation:
-	
-		.. code-block :: bash
-		
-			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
-		
-	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
-	
-		.. code-block :: bash
-		
-			sudo add-apt-repository ppa:chronitis/jupyter
-			sudo apt-get update
-			conda install -c anaconda ipykernel
-			sudo apt-get install irkernel ijavascript
-
-*Installing RStudio-Server*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-RStudio can be installed in several ways. 
-
-First, you can follow the RStudio-Server `instructions for Linux <https://www.rstudio.com/products/rstudio/download-server/>`_
-
-Second, you can use Docker (following the same `ez` `documentation <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/index.html>`_ as for Anaconda).
-
-We suggest using containers from Docker Hub `Rocker <https://hub.docker.com/r/rocker/geospatial/>`_
-
-Third, you can use Anaconda
-
-`Instructions for Anaconda <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/rstudio.html>`_ 
 
 **Description of output and results**
 
