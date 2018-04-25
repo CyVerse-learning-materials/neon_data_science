@@ -191,15 +191,19 @@ If you're on an instance which already has Anaconda installed, you'll still need
 	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
 
 		.. code-block :: bash
-
+		
+			# R JavaScript Ruby
 			sudo add-apt-repository ppa:chronitis/jupyter
 			sudo apt-get update
-			conda install -c anaconda ipykernel
-			sudo apt-get install irkernel ijavascript
-			conda create -n ipykernel_py2 python=2 ipykernel
+			sudo apt-get install irkernel ijavascript iruby 
+			# Python2
+			conda create -n ipykernel_py2 python=2 ipykernel 
 			source activate ipykernel_py2    
 			python -m ipykernel install --user
-
+			# Bash
+			pip install bash_kernel 
+			python -m bash_kernel.install
+			
 *Installing RStudio-Server*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
