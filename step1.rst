@@ -12,6 +12,12 @@ Launching a Data Science Virtual Machine
 ..
 	#### Comment: short text description goes here ####
 
+CyVerse operates a cloud service it calls "`Atmosphere<http://www.cyverse.org/atmosphere>`_". Users can request up to 2,000 allocation units [hours (hr)] per month. E.g. a 1-core instance uses 1 AU/hr, a 4-core instance uses 4 AU/hr, and a 16-core instance uses 16 AU/hr)
+
+Allocations are automatically reset to a default 128 AU on the 1st of each month. Users can request more AU by using the Intercom button in the lower right of the browser page. Requests are typically approved in <1 hour during standard business hours, and <24 hours on nights and weekends. 
+
+`XSEDE Jetstream <https://portal.xsede.org/jetstream>`_ uses the same UI interface as Atmosphere. Startup allocations typically range from 25,000 - 250,000 AU per year. Research allocations between 250,000 to several million AU are also available through XSEDE. 
+
 ----
 
 
@@ -22,7 +28,46 @@ Launching a Data Science Virtual Machine
 
 Log into `CyVerse Atmosphere <http://atmo.cyverse.org/>`_
 
+Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/application>`_
+
 1. Select a featured image with a Graphic User Interface (GUI). 
+
+**Atmosphere Image(s):**
+
+.. list-table::
+    :header-rows: 1
+
+    * - Image Name
+      - Version
+      - Description
+      - Link
+    * - Ubuntu 16.04 GUI
+      - 2.1
+      - XFCE Base, iRODS 
+      -	`Image <https://atmo.cyverse.org/application/images/1453>`_
+    * - Ubuntu 16.04 non-GUI
+      - 1.6
+      -non-GUI Base, iRODS
+      -	`Image <https://atmo.cyverse.org/application/images/1420>`_
+
+**Jetstream Image(s):**
+
+.. list-table::
+    :header-rows: 1
+
+    * - Image Name
+      - Version
+      - Description
+      - Link
+    * - Ubuntu 16.04 GUI
+      - 1.13
+      - Ubuntu 16.04 LTS Development + GUI support + Docker
+      -	`Image <https://use.jetstream-cloud.org/application/images/107>`_
+    * - Ubuntu 14.04 GUI
+      - 1.17
+      - Base Ubuntu 14.04.3 + Xfce + Xfce-goodies, firefox, icon sets and themes
+      -	`Image <https://use.jetstream-cloud.org/application/images/54>`_
+
 
 2. Allow the instance to reach 'active' status. Instances typically take 3-7 minutes to boot up the first time.
 
