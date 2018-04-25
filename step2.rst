@@ -38,8 +38,8 @@ Data Download
       - File Share UI
       -
 
-*Google Drive Client*
-~~~~~~~~~~~~~~~~~~~~
+*Google Drive Jupyter Client*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Dependency: `Node.js 5+ <https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04>`_ 
 
@@ -55,18 +55,19 @@ Google Drive requires port ``8888`` or ``8889`` with port forwarding to work
 	
 		jupyter labextension install @jupyterlab/google-drive
 
-*iRODS iCommands Client*
-~~~~~~~~~~~~~~~~~~~~~~~~
+*iRODS Jupyter Client*
+~~~~~~~~~~~~~~~~~~~~~~
+
+CyVerse has a developed a `Jupyter Lab iRODS <https://www.npmjs.com/package/@towicode/jupyterlab_irods>`_ client similar to the Google Drive extension.
+
+*iRODS iCommands CLI*
+~~~~~~~~~~~~~~~~~~~~~
 
 `CyVerse Instructions <https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands>`_
 
 `Instructions from iRODS <https://packages.irods.org>`_
 
 `Download from iRODS <https://irods.org/download/>`_
-
-CyVerse has a remote client for Jupyter Lab similar to the Google Drive plugin
-
-`Jupyter Lab iRODS <https://www.npmjs.com/package/@towicode/jupyterlab_irods>`_
 
 1. Install iCommands on the VM
 
@@ -119,6 +120,8 @@ Enter the following:
 
 *CyberDuck*
 ~~~~~~~~~~~
+
+CyberDuck is a GUI client that works in Windows and Mac OS X. It can connect to almost every type of proximate file sharing system (DropBox, Drive, AWS S3, SFTP, iRODS, etc).
 
 `Using CyVerse and CyberDuck <http://cyberduck-quickstart.readthedocs.io/en/latest/#>`_
 
