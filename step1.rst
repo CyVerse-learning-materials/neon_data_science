@@ -203,7 +203,16 @@ If you're on an instance which already has Anaconda installed, you'll still need
 			# Bash
 			pip install bash_kernel 
 			python -m bash_kernel.install
-			
+	
+	Geospatial dependencies (GDAL)
+	
+		.. code-block :: bash
+		
+			sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
+			sudo apt update
+			sudo apt install gdal-bin python-gdal python3-gdal libgdal1-dev
+	
+	
 *Installing RStudio-Server*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
