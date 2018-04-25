@@ -78,6 +78,7 @@ Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/applicat
 	ssh CyVerseUserName@<INSTANCE-IP-ADDRESS>
 
 .. Note:: 
+
 	To access Clipboard in Apache Guacamole Web Shell:
 
 	- Open Clipboard and virtual keyboard
