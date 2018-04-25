@@ -20,12 +20,13 @@ Launching a Data Science Virtual Machine
 
 .. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
 
+Log into `CyVerse Atmosphere <http://atmo.cyverse.org/>`_
 
-1.Use a featured image with a Graphic User Interface (GUI). 
+1. Select a featured image with a Graphic User Interface (GUI). 
 
 2. Allow the instance to reach 'active' status. Instances typically take 3-7 minutes to boot up the first time.
 
-3. Log into the Apache Guacamole Web Shell to access a terminal, or use ``ssh`` on your local machine:
+3. Log into the Atmosphere's Apache Guacamole Web Shell to access a terminal, or use ``ssh`` on your local machine:
 
 .. code-block:: bash
 
