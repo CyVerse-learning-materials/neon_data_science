@@ -44,10 +44,6 @@ Select Projects and "Create New Project"
 
 Select the newly created project
 
-- Click on your newly created project!
-           
-- Now, click 'New' and then "Instance" from the dropdown menu to start up a new virtual machine.
-
 *Start a new Instance*
 ~~~~~~~~~~~~~~~~~~~~~~
 
