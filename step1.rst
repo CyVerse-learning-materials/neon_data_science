@@ -180,7 +180,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 3. Click the link to open a basic notebook. 
 
-.. Advanced::
+.. Note::
 
 	To install your own packages you'll need to change ownership of the Anaconda installation:
 
