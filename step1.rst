@@ -20,15 +20,36 @@ Allocations are automatically reset to a default 128 AU on the 1st of each month
 
 ----
 
-
-*Start a Cloud Instance*
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
+*Login*
+~~~~~~~
 
 Log into `CyVerse Atmosphere <http://atmo.cyverse.org/>`_
 
 Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/application>`_
+
+1. Fill in your ``username`` and ``password`` and click "LOGIN"
+           
+2. Select Projects and "Create New Project"
+
+- Now, this is something you only need to do once.
+
+- We'll do this with Projects, which gives you a bit of a workspace in which to keep things that belong to "you".
+
+- Click on the "Projects" tab on the top and then click "CREATE NEW PROJECT"
+
+- Enter the name "NEON2018" into the Project Name, and something simple like "NEON Data Institute 2018" into the description. Then click 'create'.
+
+3. Select the newly created project
+
+- Click on your newly created project!
+           
+- Now, click 'New' and then "Instance" from the dropdown menu to start up a new virtual machine.
+
+
+*Start a new Instance*
+~~~~~~~~~~~~~~~~~~~~~~
+
+From in your Project folder, you can select "New" and "Instance"
 
 1. Select a featured image with a Graphic User Interface (GUI). 
 
@@ -68,10 +89,25 @@ Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/applicat
       - Base Ubuntu 14.04.3 + Xfce + Xfce-goodies, firefox, icon sets and themes
       -	`Image <https://use.jetstream-cloud.org/application/images/54>`_
 
+Now, click 'New' and then "Instance" from the dropdown menu to start up a new virtual machine.
 
-2. Allow the instance to reach 'active' status. Instances typically take 3-7 minutes to boot up the first time.
+- Find the "Ubuntu 16.04" image, click on it
 
-3. Log into the Atmosphere's Apache Guacamole Web Shell to access a terminal, or use ``ssh`` on your local machine:
+- Name it something simple such as "workshop tutorial" and select 'tiny1 (CPU: 1, Mem: 4GB, Disk: 30GB)'.
+
+- Leave rest of the fields as default.
+
+- Wait for it to become active
+
+- It will now be booting up! This will take 2-10 minutes, depending.
+Just wait! Don't reload or anything.
+
+- Click on your new instance to get more information!
+
+- Now, you can either click "Open Web Shell", *or*, if you know how to use ssh,
+you can ssh in with your CyVerse username on the IP address of the machine 
+
+2. Log into the Atmosphere's Apache Guacamole Web Shell to access a terminal, or use ``ssh`` on your local machine:
 
 .. code-block:: bash
 
@@ -90,6 +126,18 @@ Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/applicat
 	- Close the Clipboard window by selecting `control` + `command ⌘` + `shift` keys again
 
 	- Right click with your mouse or double tap fingers on touchpad to paste in the web shell or Desktop
+
+**Deleting your instance**
+
+- To completely remove your instance, you can select the "delete" buttom from the instance details page. 
+
+- This will open up a dialogue window. Select the "Yes, delete this instance" button.
+
+- It may take Atmosphere a few minutes to process your request. The instance should disappear from the project when it has been successfully deleted. 
+
+.. Note::
+
+  It is advisable to delete the machine if you are not planning to use it in future to save valuable resources. However if you want to use it in future, you can suspend it.
 
 *EZ Installation*
 ~~~~~~~~~~~~~~~~~
@@ -226,3 +274,7 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+
+.. |atmo-1| image:: ../img/atmo-1.png
+  :width: 750
+  :height: 700
