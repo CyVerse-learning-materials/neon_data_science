@@ -219,12 +219,17 @@ After ``ezj -R`` has finished, you can install RStudio-Server
 
 	.. code-block :: bash
 	
-		export PATH="/opt/anaconda3/bin:$PATH
+		export PATH="/opt/anaconda3/bin":$PATH
 		sudo chown $(id -u):$(id -g) /opt/anaconda3/ -R
 		echo "export RSTUDIO_WHICH_R='/opt/anaconda3/bin/R'" >> ~/.bash_profile
 		sudo apt-get install gdebi-core
+
+Install RStudio-Server
+
+	.. code-block :: bash
+	
 		wget https://download2.rstudio.org/rstudio-server-1.1.447-amd64.deb
-		sudo gdebi rstudio-server-1.1.447-amd64.deb
+		sudo gdebi --non-interactive rstudio-server-1.1.447-amd64.deb
 
 The installation of RStudio-Server is going to fail because we haven't told it which R to use. Because we are using Anaconda's installation of R, and not the basic installation of R, we have to reassign RStudio to look for Anaconda
 
