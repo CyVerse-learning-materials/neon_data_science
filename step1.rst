@@ -173,6 +173,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 	.. code-block :: bash
 
+		sudo apt-get update
 		ezj
 
 2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
