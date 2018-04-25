@@ -218,6 +218,16 @@ This will trigger the Ansible playbook to install ``r-base``, ``r-essentials``, 
 
 After ``ezj -R`` has finished, you can install RStudio-Server
 
+Install these misc. dependencies
+
+	.. code-block :: bash
+	
+		conda update conda
+		conda install gxx_linux-64
+		conda install gcc_linux-64
+
+Set Path and install ``gdebi``
+
 	.. code-block :: bash
 	
 		export PATH="/opt/anaconda3/bin":$PATH
@@ -225,7 +235,7 @@ After ``ezj -R`` has finished, you can install RStudio-Server
 		echo "export RSTUDIO_WHICH_R='/opt/anaconda3/bin/R'" >> ~/.bash_profile
 		sudo apt-get install gdebi-core
 
-Install RStudio-Server
+Install RStudio-Server with ``gdebi``:
 
 	.. code-block :: bash
 	
@@ -243,7 +253,7 @@ Restart the server
 	.. code-block :: bash
 	
 		sudo rstudio-server start
-		
+
 .. Note::
 
 	To ensure your session doesn't die when you close your terminal use `tmux` or `screen` to start your remote sessions and to detach the screen before exiting.
