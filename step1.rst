@@ -113,6 +113,29 @@ you can ssh in with your CyVerse username on the IP address of the machine
 
 	ssh CyVerseUserName@<INSTANCE-IP-ADDRESS>
 
+You should see something like this
+
+.. code-block:: bash
+
+	Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-81-generic x86_64)
+
+	  Get cloud support with Ubuntu Advantage Cloud Guest:
+	    http://www.ubuntu.com/business/services/cloud
+
+	155 packages can be updated.
+	0 updates are security updates.
+
+
+	*** System restart required ***
+	Welcome to
+	    _   _                             _
+	   / \ | |_ _ __ ___   ___  ___ _ __ | |__   ___ _ __ ___
+	  / _ \| __| '_ ` _ \ / _ \/ __| '_ \| '_ \ / _ \ '__/ _ \
+	 / ___ \ |_| | | | | | (_) \__ \ |_) | | | |  __/ | |  __/
+	/_/   \_\__|_| |_| |_|\___/|___/ .__/|_| |_|\___|_|  \___|
+	
+	cyverse_username@vm142-39:~$
+
 .. Note:: 
 
 	To access the Clipboard in an Apache Guacamole Web Shell:
