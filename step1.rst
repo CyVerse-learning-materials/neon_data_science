@@ -27,9 +27,12 @@ Log into `CyVerse Atmosphere <http://atmo.cyverse.org/>`_
 
 Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/application>`_
 
-1. Fill in your ``username`` and ``password`` and click "LOGIN"
+Fill in your ``username`` and ``password`` and click "LOGIN"
            
-2. Select Projects and "Create New Project"
+*Create a Project*
+~~~~~~~~~~~~~~~~~~
+
+Select Projects and "Create New Project"
 
 - Now, this is something you only need to do once.
 
@@ -39,21 +42,20 @@ Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/applicat
 
 - Enter the name "NEON2018" into the Project Name, and something simple like "NEON Data Institute 2018" into the description. Then click 'create'.
 
-3. Select the newly created project
+Select the newly created project
 
 - Click on your newly created project!
            
 - Now, click 'New' and then "Instance" from the dropdown menu to start up a new virtual machine.
 
-
 *Start a new Instance*
 ~~~~~~~~~~~~~~~~~~~~~~
 
-From in your Project folder, you can select "New" and "Instance"
+From your Project folder, you can select "New" and "Instance"
 
 1. Select a featured image with a Graphic User Interface (GUI). 
 
-**Atmosphere Image(s):**
+**Suggested Atmosphere Image(s):**
 
 .. list-table::
     :header-rows: 1
@@ -71,7 +73,7 @@ From in your Project folder, you can select "New" and "Instance"
       - non-GUI Base, iRODS
       -	`Image <https://atmo.cyverse.org/application/images/1420>`_
 
-**Jetstream Image(s):**
+**Suggested Jetstream Image(s):**
 
 .. list-table::
     :header-rows: 1
@@ -89,8 +91,6 @@ From in your Project folder, you can select "New" and "Instance"
       - Base Ubuntu 14.04.3 + Xfce + Xfce-goodies, firefox, icon sets and themes
       -	`Image <https://use.jetstream-cloud.org/application/images/54>`_
 
-Now, click 'New' and then "Instance" from the dropdown menu to start up a new virtual machine.
-
 - Find the "Ubuntu 16.04" image, click on it
 
 - Name it something simple such as "workshop tutorial" and select 'tiny1 (CPU: 1, Mem: 4GB, Disk: 30GB)'.
@@ -99,15 +99,19 @@ Now, click 'New' and then "Instance" from the dropdown menu to start up a new vi
 
 - Wait for it to become active
 
-- It will now be booting up! This will take 2-10 minutes, depending.
-Just wait! Don't reload or anything.
+- It should now be booting up! This will take 2-10 minutes, depending.
 
-- Click on your new instance to get more information!
+- Be Patient (but not too patient - if it takes >10 minutes the system may be at capacity, if you're trying to launch a large or extra large VM, try something smaller).
 
-- Now, you can either click "Open Web Shell", *or*, if you know how to use ssh,
+- You can click on your new instance to get more information.
+
+*Accessing the Shell*
+~~~~~~~~~~~~~~~~~~~~~
+
+Once the instance is `active`, you can access it via ``ssh`` or by using the Web Shell provided by Atmosphere. 
+
+- Click "Open Web Shell", *or*, if you know how to use ssh,
 you can ssh in with your CyVerse username on the IP address of the machine 
-
-2. Log into the Atmosphere's Apache Guacamole Web Shell to access a terminal, or use ``ssh`` on your local machine:
 
 .. code-block:: bash
 
@@ -115,7 +119,7 @@ you can ssh in with your CyVerse username on the IP address of the machine
 
 .. Note:: 
 
-	To access Clipboard in Apache Guacamole Web Shell:
+	To access the Clipboard in an Apache Guacamole Web Shell:
 
 	- Open Clipboard and virtual keyboard
 	  - On a standard keyboard: `ctrl` + `alt` + `shift` key
@@ -145,7 +149,6 @@ you can ssh in with your CyVerse username on the IP address of the machine
 For more details visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_ on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
 
 If you're on an instance which already has Anaconda installed, you'll still need to re-run `ez` to restart the Anaconda virtual enivronment. 
-
 
 1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
 
