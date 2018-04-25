@@ -24,7 +24,7 @@ Contents
 .. toctree::
 	:maxdepth: 2
 
-	Tutorial home <self>
+	Home <self>
 	Launching a Data Science Virtual Machine <step1.rst>
 	Data Download <step2.rst>
 
@@ -170,8 +170,16 @@ Input and example data
       - Format
       - Preparation/Notes
       - Example Data
-    * -
+    * - Discrete lidar
+      - *.laz, *.las, *.xyz, *.bin
+      - classified
+      - `Data Portal <http://data.neonscience.org/home>`_ 
+    * - Orthophotography
+      - *.tif
+      - 
       -
+    * - Hyperspectral
+      - *.hdf
       -
       -
 
