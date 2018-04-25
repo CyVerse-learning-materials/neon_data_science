@@ -6,9 +6,11 @@ The focus of this repository is on NEON AOP lidar and hyperspectral imagery, con
 
 **Learning Objectives**: [NEON’s data science skills](http://www.neonscience.org/opportunities/learning-opportunities/neon-data-skills) provide notebooks and lesson plans for analyzing hyperspectral imagery. I plan to develop complementary notebooks for downloading [AOP lidar data](http://www.neonscience.org/data-collection/airborne-remote-sensing); segmenting individual organisms (herbaceous plants, woody shrubs, and trees) using open-source code, vertically sampling (all bands and time series) hyperspectral signatures for each organism.
 
-The lessons are targeted toward advanced graduate students and researchers. Lessons are expected to take at least one week, e.g. 2-3 lectures, one computer lab session, with online nightly homework.
+The lessons are targeted toward advanced graduate students and researchers. 
 
-Students will be allowed to work in small teams (paired programming) to develop their individual notebooks.
+Lessons are expected to take 30 minutes to 2 hours each to complete.
+
+Students should work in small teams (paired programming) to develop their notebooks. 
 
 ## Prerequisites
 
@@ -17,7 +19,7 @@ Students will be allowed to work in small teams (paired programming) to develop 
   * Python 
   * command line interface (CLI)
 * Data science lessons from [The Carpentries](https://software-carpentry.org/lessons/) are encouraged. 
-* Understanding of [geospatial data analysis](http://www.datacarpentry.org/r-spatial-data-management-intro/) is also encouraged. 
+* Broad understanding of [geospatial data analysis in R](http://www.datacarpentry.org/r-spatial-data-management-intro/) is also encouraged. 
 
 ## Lesson 1: Data Science Workbench
 
@@ -27,7 +29,7 @@ Students will be allowed to work in small teams (paired programming) to develop 
 
 * Use [CyVerse Learning Center tutorials](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/) to deploy container software ([Anaconda (Jupyter)](https://anaconda.org/anaconda/jupyter), [Docker](https://www.docker.com/), and [Singularity](http://singularity.lbl.gov/)).
 
-* [Launch virtual machine](https://github.com/tyson-swetnam/SRER_NEON/wiki/Virtual-Machines-QuickStart) and install the necessary software: [Rocker RStudio](https://hub.docker.com/u/rocker/), & [Jupyter](http://jupyter.org/) Notebooks and [Lab](https://github.com/jupyterlab/jupyterlab) for running NEON data analyses.
+* [Launch virtual machine]() and install the necessary software: [Rocker RStudio](https://hub.docker.com/u/rocker/), & [Jupyter](http://jupyter.org/) Notebooks and [Lab](https://github.com/jupyterlab/jupyterlab) for running NEON data analyses.
 
 ## Lesson 2: Get NEON AOP data
 
@@ -52,17 +54,17 @@ Students will be allowed to work in small teams (paired programming) to develop 
 
 * Introduce [Potree](http://www.potree.org/), [Entwine](https://entwine.io/) & [Greyhound](https://greyhound.io/) for point cloud visualization.
 
-* Introduce [CloudCompare](http://www.danielgm.net/cc/)
+* Discuss the use of [CloudCompare](http://www.danielgm.net/cc/) and [Blender]()
 
-## Lesson 4: Lidar stem segmentation in R ([lidR](https://github.com/Jean-Romain/lidR))
+## Lesson 4: Lidar stem segmentation in R
 
 **Goals**: Learn how to segment individual trees/shrubs/herbaceous plants from lidar data in R.
 
 **Value**: Generate ecologically relevant inventory (census) of physical characteristics.
 
-* Run lidR stem segmentation
+* Run [lidR](https://github.com/Jean-Romain/lidR) stem segmentations
 
-* Develop an individual object (plant) inventory for various scales.
+* Develop individual object (plant) inventory for various scales.
 
 * [Leaflet](https://rstudio.github.io/leaflet/) mapping in R.
 
@@ -104,10 +106,12 @@ Students will be allowed to work in small teams (paired programming) to develop 
 * Graphical representations of the data
   * `matplotlib`
   * `pandas`
+  * `numpy`
   
 ## Lesson 9: Scaling analyses to multiple NEON sites
 
 **Goal**: Develop workflows which utilize data from multiple NEON sites and time series analyses
 
 * Introduce Makeflow and Singularity
-* Writing job requests for HPC
+* Introduce Dask Distributed
+* Job requests for HPC
