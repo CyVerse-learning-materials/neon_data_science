@@ -47,7 +47,7 @@ Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/applicat
       -	`Image <https://atmo.cyverse.org/application/images/1453>`_
     * - Ubuntu 16.04 non-GUI
       - 1.6
-      -non-GUI Base, iRODS
+      - non-GUI Base, iRODS
       -	`Image <https://atmo.cyverse.org/application/images/1420>`_
 
 **Jetstream Image(s):**
