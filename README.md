@@ -14,12 +14,36 @@ Students should work in small teams (paired programming) to develop their notebo
 
 ## Prerequisites
 
-* Basic understanding of:
+* An active internet connection
+
+* Fundamental understanding of Remote Sensing and Geographic Information Systems (GIS)
+  * Raster and Vector analysis
+    * Data science Lessons from [The Carpentries](https://software-carpentry.org/lessons/) are encouraged. 
+    * Broad understanding of [geospatial data analysis in R](http://www.datacarpentry.org/r-spatial-data-management-intro/) is also encouraged. 
+  * Point cloud analysis
+    * discrete lidar
+    * structure from motion photogrammetry
+  * Image processing
+    * hyperspectral
+    * vegetation indexing
+    * orthorectification
+* Basic data science understanding of:
+  * Software Container Technology, i.e. Docker, Singularity
+  * Container management and orchestration, i.e. Docker Compose, Docker Swarm, Kubernetes
+  * Computational notebooks, i.e. Jupyter Notebooks, Lab, Hub; RStudio R Markdown
+  * Google Earth Engine
+  * Open Source GIS software
+    * QGIS
+    * GRASS
+    * SAGA
+    * CloudCompare
+    * PDAL
+    * GDAL
+* Moderate (to Advanced) computer language programming in:
   * R 
   * Python 
-  * command line interface (CLI)
-* Data science lessons from [The Carpentries](https://software-carpentry.org/lessons/) are encouraged. 
-* Broad understanding of [geospatial data analysis in R](http://www.datacarpentry.org/r-spatial-data-management-intro/) is also encouraged. 
+  * Bash
+  * JavaScript
 
 ## Lesson 1: Data Science Workbench
 
