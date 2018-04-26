@@ -200,6 +200,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 			conda create -n ipykernel_py2 python=2 ipykernel 
 			source activate ipykernel_py2    
 			python -m ipykernel install --user
+			source deactivate ipykernel_py2
 			conda activate base # switch back to base Python3 environment
 			# Bash
 			pip install bash_kernel 
