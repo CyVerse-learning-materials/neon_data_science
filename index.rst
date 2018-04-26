@@ -10,8 +10,8 @@ NEON Data Science Institute 2018
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
     sharing data ####
 
-Goal: Instruction on CyVerse virtual machines for data processing and analysis
-------------------------------------------------------------------------------
+Moving Geospatial Data Analysis onto hybrid Cloud & HPC
+-------------------------------------------------------
 
 ..
     #### Comment: Avoid covering upstream and downstream steps that are not explicitly and
