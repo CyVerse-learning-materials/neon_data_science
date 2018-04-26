@@ -265,6 +265,8 @@ The installation of RStudio-Server is going to fail because we haven't told it w
 	.. code-block :: bash
 	
 		sudo sh -c 'echo "rsession-which-r=/opt/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'
+		# export RSTUDIO_WHICH_R='/opt/anaconda/lib/R/bin/R'
+		# sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >> ~/.bash_profile'
 
 Restart the server
 
