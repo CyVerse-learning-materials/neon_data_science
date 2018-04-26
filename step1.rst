@@ -25,6 +25,8 @@ Users can request more AU by asking in the Intercom (blue button in the lower ri
 
 Log into `CyVerse Atmosphere <http://atmo.cyverse.org/>`_
 
+`Atmosphere Manual <https://cyverse.github.io/atmosphere-guides/<`_
+
 Alternately, log into `XSEDE Jetstream <https://use.jetstream-cloud.org/application>`_
 
 Fill in your ``username`` and ``password`` and click "LOGIN"
