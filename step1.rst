@@ -193,9 +193,9 @@ If you're on an instance which already has Anaconda installed, you'll still need
 		.. code-block :: bash
 		
 			# R JavaScript Ruby
-			sudo add-apt-repository ppa:chronitis/jupyter
+			sudo add-apt-repository ppa:chronitis/jupyter -y
 			sudo apt-get update
-			sudo apt-get install irkernel ijavascript iruby 
+			sudo apt-get install -y irkernel ijavascript iruby 
 			# Python2
 			conda create -n ipykernel_py2 python=2 ipykernel 
 			source activate ipykernel_py2    
