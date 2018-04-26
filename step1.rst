@@ -12,7 +12,7 @@ Launching a Data Science Virtual Machine
 ..
 	#### Comment: short text description goes here ####
 
-CyVerse operates a cloud service it calls "`Atmosphere<http://www.cyverse.org/atmosphere>`_". Users can request up to 2,000 allocation units [hours (hr)] per month. E.g. a 1-core instance uses 1 AU/hr, a 4-core instance uses 4 AU/hr, and a 16-core instance uses 16 AU/hr)
+CyVerse operates a cloud service called `Atmosphere<http://www.cyverse.org/atmosphere>`_. Individual CyVerse users can request up to 2,000 allocation units [hours (hr)] per month. E.g. a 1-core instance uses 1 AU/hr, a 4-core instance uses 4 AU/hr, and a 16-core instance uses 16 AU/hr)
 
 Allocations are automatically reset to a default 128 AU on the 1st of each month. Users can request more AU by using the Intercom button in the lower right of the browser page. Requests are typically approved in <1 hour during standard business hours, and <24 hours on nights and weekends. 
 
