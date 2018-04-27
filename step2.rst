@@ -103,7 +103,6 @@ Enter the following:
     * - zone
       - *iplant*
      
-
 .. Note::
 
   Set up auto-complete for iCommands `instructions <https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands>`_
@@ -124,6 +123,17 @@ Enter the following:
 CyberDuck is a GUI client that works in Windows and Mac OS X. It can connect to almost every type of proximate file sharing system (DropBox, Drive, AWS S3, SFTP, iRODS, etc).
 
 `Using CyVerse and CyberDuck <http://cyberduck-quickstart.readthedocs.io/en/latest/#>`_
+
+CyberDuck also has a `CLI client <https://duck.sh/>`_ that can be used in Linux.
+
+To install on the VM:
+
+	.. code-block :: bash
+
+		echo -e "deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main" | sudo tee /etc/apt/sources.list.d/cyberduck.list > /dev/null
+		sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FE7097963FEFBE72
+		sudo apt-get update
+		sudo apt-get install duck
 
 ..
 	#### Comment: Suggested style guide:
