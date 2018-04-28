@@ -318,7 +318,10 @@ Restart the server
 	.. code-block :: bash
 	
 		echo "$(hostname)
-		proxy / 127.0.0.1:8888
+		proxy / 127.0.0.1:8888 {
+		    websocket
+		    transparent
+		}
 		" > Caddyfile
 		curl https://getcaddy.com | bash -s personal http.nobots
 		caddy
