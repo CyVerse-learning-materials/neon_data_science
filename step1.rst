@@ -34,24 +34,22 @@ Fill in your ``username`` and ``password`` and click "LOGIN"
 *Create a Project*
 ~~~~~~~~~~~~~~~~~~
 
-Select Projects and "Create New Project"
-
-- Now, this is something you only need to do once.
-
-- We'll do this with Projects, which gives you a bit of a workspace in which to keep things that belong to "you".
+This is something you only need to do once.
 
 - Click on the "Projects" tab on the top and then click "CREATE NEW PROJECT"
 
-- Enter the name "NEON2018" into the Project Name, and something simple like "NEON Data Institute 2018" into the description. Then click 'create'.
+- Enter a name, e.g. "NEON2018" into the Project Name field.
 
-Select the newly created project
+- the Description can be something complex and long (like an extended abstract, or tutorial), or something short like "Data Institute 2018".
+
+- Select the newly created project
 
 *Start a new Instance*
 ~~~~~~~~~~~~~~~~~~~~~~
 
 From your Project folder, you can select "New" and "Instance"
 
-1. Select a featured image with a Graphic User Interface (GUI). 
+1. Suggest you select a featured image with a Graphic User Interface (GUI). 
 
 **Suggested Atmosphere Image(s):**
 
@@ -91,13 +89,13 @@ From your Project folder, you can select "New" and "Instance"
 
 - Find the "Ubuntu 16.04" image, click on it
 
-- Name it something simple such as "workshop tutorial" and select 'tiny1 (CPU: 1, Mem: 4GB, Disk: 30GB)'.
+- Give it a short name that is distinct "my_first_vm" 
+
+- Select 'tiny1 (CPU: 1, Mem: 4GB, Disk: 30GB)'. Because this is your first attempt at provisioning a virtual machine it doesn't need to be a workhorse (yet). 
 
 - Leave rest of the fields as default.
 
 - Wait for it to become active
-
-- It should now be booting up! This will take 2-10 minutes, depending.
 
 - Be Patient (but not too patient - if it takes >10 minutes the system may be at capacity, if you're trying to launch a large or extra large VM, try something smaller).
 
@@ -117,7 +115,7 @@ you can ssh in with your CyVerse username on the IP address of the machine
 
 You should see something like this
 
-.. code-block:: bash
+.. code-block :: bash
 
 	Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-81-generic x86_64)
 
@@ -138,6 +136,22 @@ You should see something like this
 	
 	cyverse_username@vm142-39:~$
 
+Note, this instance is running an older version of Ubuntu 16.
+
+A good practice before installing any new software is to run:
+
+.. code-block :: bash
+
+	sudo apt-get update && sudo apt-get upgrade
+
+After the new updates are installed you can reboot the machine from terminal or from the Atmosphere UI
+
+.. code-block :: bash
+
+	sudo reboot
+
+If you're using the Web Shell, the instance will exit. Wait a few minutes for the instance to reboot and refresh the screen.
+	
 .. Note:: 
 
 	To access the Clipboard in an Apache Guacamole Web Shell:
@@ -152,6 +166,18 @@ You should see something like this
 
 	- Right click with your mouse or double tap fingers on touchpad to paste in the web shell or Desktop
 
+**Suspending an instance**
+
+- When you're done using an instance it is wise to 'Suspend' the instance in the Actions. 
+
+- This will kill any process that is still running.
+
+- Your data and all of your programs will be fine. It is however wise to move your data back onto your DataStore or back it up somewhere else so it will be available.
+
+- Suspending the instance will leave it ready for reuse when you want to "resume" working on it.
+
+- You will not be charged any AU while the instance is suspended. 
+
 **Deleting your instance**
 
 - To completely remove your instance, you can select the "delete" buttom from the instance details page. 
@@ -160,10 +186,25 @@ You should see something like this
 
 - It may take Atmosphere a few minutes to process your request. The instance should disappear from the project when it has been successfully deleted. 
 
+**Imaging an instance**
+
+The use of Docker and Singularity take a lot of the problems out of building unique software stacks on cloud - but sometimes these cannot be avoided. 
+
+- Have you created a unique software stack that you need to launch on a larger number of future instances? 
+
+- Does it take a long time to compile your software stack each time you launch a new instance?
+
+- Only create images from the smallest possible versions of your instance. A larger imaged instance cannot be run on a smaller instance.
+
+To request that your instance be imaged click the "Image" button from Actions.
+
 .. Note::
 
   It is advisable to delete the machine if you are not planning to use it in future to save valuable resources. However if you want to use it in future, you can suspend it.
-
+  
+  If you want to keep the instance for a future project, you can also "shelve" the instance. It will take a longer period of time to resume a shelved instance.
+  
+  
 *EZ Installation of Project Jupyter*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
