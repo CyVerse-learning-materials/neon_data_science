@@ -12,20 +12,6 @@ Using the NEON Data API w/ Python
 ..
 	#### Comment: short text description goes here ####
 
-----
-
-**Input Data:**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Input
-      - Description
-      - Example
-    * - 
-      -
-      -
-
 *Clone Github Repository*
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -52,9 +38,9 @@ In the terminal:
 *Download data from CyVerse DataStore in Bash*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-CyVerse uses a system called iRODS to move files onto and off of its Data Store. 
+CyVerse uses a system called `iRODS <https://docs.irods.org/>`_ to move files onto and off of its Data Store. 
 
-`iRODS <https://docs.irods.org/>`_ uses multi-threaded file transfers for faster downloads and uploads than traditional ``wget`` or ``curl`` 
+iRODS uses multi-threaded file transfers for faster downloads and uploads than traditional ``wget`` or ``curl`` 
 
 Prerequisite: `Installed iRODS iCommands and initiated connection <step2.rst>`_
 
@@ -87,6 +73,11 @@ In this example we are using the flags to:
 
 Note, we are using the same flags as the ``iget`` statement above.
 
+*Jupyter Lab Google Drive Client*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After you've setup your Jupyter Lab, you can view files in your Google Drive and move them onto the VM.
+
 
 ..
 	#### Comment: Suggested style guide:
@@ -97,19 +88,6 @@ Note, we are using the same flags as the ``iget`` statement above.
 	4. Primary menu titles in double quotes: Under "Input" choose...
 	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
 	####
-
-**Output/Results**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Output
-      - Description
-      - Example
-    * -
-      -
-      -
-
 
 ----
 
