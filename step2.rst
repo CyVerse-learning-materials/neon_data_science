@@ -20,23 +20,23 @@ Data Download
 
 ----
 
-**Data Repositories:**
+**Data Sharing Services:**
 
 .. list-table::
     :header-rows: 1
 
     * - Input
       - Description
-      - Example
+      - Link
     * - Google Drive
-      - Cloud Service
-      -
+      - Cloud Data Storage Service
+      - `Jupyter Client <https://github.com/jupyterlab/jupyterlab-google-drive>`_
     * - Cyverse Data Store
-      - iRODS
-      - 
+      - integrated Rule-Oriented Data System (iRODS)
+      - `Jupyter Client <https://www.npmjs.com/package/@towicode/jupyterlab_irods>`_
     * - CyberDuck
       - File Share UI
-      -
+      - `Using with CyVerse <http://cyberduck-quickstart.readthedocs.io/en/latest/>`_
 
 *Google Drive Jupyter Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
