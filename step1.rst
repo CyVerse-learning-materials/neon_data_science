@@ -282,7 +282,9 @@ After ``ezj -R`` has finished, you can install RStudio-Server
 Install these misc. dependencies
 
 	.. code-block :: bash
-	
+		
+		export PATH="/opt/anaconda3/bin":$PATH
+		sudo chown $(id -u):$(id -g) /opt/anaconda3/ -R	
 		conda update conda
 		conda install gxx_linux-64
 		conda install gcc_linux-64
@@ -291,15 +293,13 @@ Set Path and install ``gdebi``
 
 	.. code-block :: bash
 	
-		export PATH="/opt/anaconda3/bin":$PATH
-		sudo chown $(id -u):$(id -g) /opt/anaconda3/ -R
-		echo "export RSTUDIO_WHICH_R='/opt/anaconda3/bin/R'" >> ~/.bash_profile
 		sudo apt-get install gdebi-core
 
 Install RStudio-Server with ``gdebi``:
 
 	.. code-block :: bash
 	
+		echo "export RSTUDIO_WHICH_R='/opt/anaconda3/bin/R'" >> ~/.bash_profile
 		wget https://download2.rstudio.org/rstudio-server-1.1.447-amd64.deb
 		sudo gdebi --non-interactive rstudio-server-1.1.447-amd64.deb
 
