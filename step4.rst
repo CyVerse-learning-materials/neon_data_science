@@ -95,6 +95,8 @@ Run the container with the `exec` command to use the GUI applications, the inter
   
     singularity exec osgeo.simg grass74
 
+GRASS has a problem with its environment variables not being set within the container. You can do  this by hand while the container is running:
+
 
 For QGIS:
 
@@ -109,7 +111,7 @@ For Saga-GIS:
     
     singularity exec osgeo.simg saga_gui
 
-.. note: 
+.. Note:: 
 
   You must use the Atmosphere Web Shell or an `ssh` terminal to access the container GUI applications; else you must set the Display variables from the Jupyter Notebook
 
