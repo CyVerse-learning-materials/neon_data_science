@@ -122,6 +122,7 @@ For Saga-GIS:
   You must use the Atmosphere Web Shell or `ssh -X` in the terminal to access the Container's GUI applications.
   
   	.. code-block :: bash
+	
 		ssh -X <USERNAME>@<IP-ADDRESS>
   
   If you are using the Web Desktop, you can resize the screen by opening the terminal emulator and typing `xrandr`
