@@ -62,12 +62,15 @@ Downloads, access, and services
       - `Register <https://user.cyverse.org/>`_
     * - Atmosphere access
       - You must have access to Atmosphere
-      - `Request Access <https://user.cyverse.org/>`_
+      - `Request Access <https://user.cyverse.org/services/available>`_
+    * - CyVerse Data Store allocation increase (Optional)
+      - You must be registered for CyVerse
+      - `Request Increase (form #2) <https://user.cyverse.org/forms>`_
     * - Jetstream access (Optional)
       - You must have registered with XSEDE
       - `Request Access <https://portal.xsede.org/my-xsede#/guest>`_
     * - Cyberduck
-      - Standalone software for upload/download to Data Store
+      - Standalone program for uploading/downloading data to Data Store
       - `Download <https://cyberduck.io/>`_
 
 Platform(s)
