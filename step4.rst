@@ -93,7 +93,7 @@ Calling the container from your Jupyter Notebook (Python3)
 *Run GUI Applications*
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Run the container with the `exec` command to use the GUI applications, the interface for GRASS:
+Run the container with the ``singularity exec`` command to use the GUI applications, the interface for GRASS:
 
   .. code-block :: bash
   
@@ -119,13 +119,13 @@ For Saga-GIS:
 
   Running the GUI applications requires a stable, fast, internet connection, else loading large raster layers may be very slow.
   
-  You must use the Atmosphere Web Shell or `ssh -X` in the terminal to access the Container's GUI applications.
+  You must use the Atmosphere Web Shell or ``ssh -X`` in the terminal to access the Container's GUI applications.
   
   	.. code-block :: bash
 	
 		ssh -X <USERNAME>@<IP-ADDRESS>
   
-  If you are using the Web Desktop, you can resize the screen by opening the terminal emulator and typing `xrandr`
+  If you are using the Web Desktop, you can resize the screen by opening the terminal emulator and typing ``xrandr``
   	
 	.. code-block :: bash
 		
