@@ -32,6 +32,7 @@ Contents
 	Launching a Data Science Virtual Machine <step1.rst>
 	Setting up Data Clients <step2.rst>
 	Data transfer <step3.rst>
+	GIS applications with container <step4.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
