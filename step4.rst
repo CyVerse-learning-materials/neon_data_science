@@ -5,7 +5,7 @@
 
 
 Working with QGIS, GRASS, SAGA-GIS
----------------------------------
+----------------------------------
 
 **Description: Run GUI programs on the VM using Singularity Containers**
 
@@ -15,13 +15,17 @@ Working with QGIS, GRASS, SAGA-GIS
 *Build the Container yourself*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to develop the container you can download it from my Github repository
+If you want to develop your own containers you can download the example Singularity file from my `Github repository <https://github.com/tyson-swetnam/osgeo-singularity>`_ and make your own changes
 
 .. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
 
-Prerequisite: `Install Singularity on Atmosphere <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_
+`EZ Install Singularity on Atmosphere or Jetstream <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_
 
-Else, `install Singularity <https://singularity.lbl.gov/install-linux>`_ on your localhost or remote system. As of early May 2018, Singularity is version `2.5.0`
+To `install Singularity <https://singularity.lbl.gov/install-linux>`_ on linux follow these instructions.
+
+CyVerse recently taught a `Container Bootcamp <https://cyverse-container-camp-workshop-2018.readthedocs-hosted.com/en/latest/index.html>`_ with in depth instructions for working with Docker and Singularity.
+
+As of early May 2018, Singularity is version `2.5.0`
 
   .. code-block :: bash
   
@@ -60,6 +64,7 @@ The container image is hosted on Singularity Hub and can be downloaded from ther
 1. Pull the image from Singularity-Hub
 
   .. code-block :: bash
+  
     singularity pull --name osgeo.simg shub://tyson-swetnam/osgeo-singularity
 
 *Running CLI scripts*
