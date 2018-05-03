@@ -13,6 +13,10 @@ NEON Data Science Institute 2018
 Moving Geospatial Data Analysis onto hybrid Cloud & HPC
 -------------------------------------------------------
 
+The purpose of this tutorial is to set up a linux-based Virtual Machine running on CyVerse Atmosphere or XSEDE Jetstream to do interactive geospatial analyses in Jupyter Notebooks and RStudio-Server. 
+
+The VM(s) can also be run in any other number of ways that the user sees fit.
+
 ..
     #### Comment: Avoid covering upstream and downstream steps that are not explicitly and
     necessarily part of the tutorial - write or link to separate quick
