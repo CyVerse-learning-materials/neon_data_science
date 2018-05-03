@@ -9,6 +9,10 @@ Working with QGIS, GRASS, SAGA-GIS
 
 **Description: Run GUI programs on the VM using Singularity Containers**
 
+If you're running on Windows OS you can set up the `Windows-Linux subsystem <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_ to access a real Linux terminal. This will enable you to run secure shell connections to your VM.
+
+Another option is to use the Atmosphere Web Desktop, which is running an XFCE Desktop.
+
 ..
 	#### Comment: short text description goes here ####
 
@@ -113,8 +117,44 @@ For Saga-GIS:
 
 .. Note:: 
 
-  You must use the Atmosphere Web Shell or an `ssh` terminal to access the container GUI applications; else you must set the Display variables from the Jupyter Notebook
-
+  Running the GUI applications requires a stable, fast, internet connection, else loading large raster layers may be very slow.
+  
+  You must use the Atmosphere Web Shell or `ssh -X` in the terminal to access the Container's GUI applications.
+  
+  	.. code-block :: bash
+		ssh -X <USERNAME>@<IP-ADDRESS>
+  
+  If you are using the Web Desktop, you can resize the screen by opening the terminal emulator and typing `xrandr`
+  	
+	.. code-block :: bash
+		
+		 SZ:    Pixels          Physical       Refresh
+		 0   1024 x 768    ( 260mm x 195mm )   0   
+		 1    800 x 600    ( 203mm x 152mm )   0   
+		 2   1280 x 800    ( 325mm x 203mm )   0   
+		 3   1280 x 960    ( 325mm x 244mm )   0   
+		 4   1280 x 1024   ( 325mm x 260mm )   0   
+		 5   1680 x 1050   ( 427mm x 267mm )   0   
+		 6   1920 x 1080   ( 488mm x 274mm )   0   
+		*7   1920 x 1200   ( 488mm x 305mm )  *0   
+		 8   3360 x 1050   ( 853mm x 267mm )   0   
+		 9   1024 x 700    ( 260mm x 178mm )   0   
+		 10  1200 x 740    ( 305mm x 188mm )   0   
+		 11  1600 x 1000   ( 406mm x 254mm )   0   
+		 12  1600 x 1200   ( 406mm x 305mm )   0   
+		 13  3200 x 1000   ( 813mm x 254mm )   0   
+		 14  3200 x 1200   ( 813mm x 305mm )   0   
+		Current rotation - normal
+		Current reflection - none
+		Rotations possible - normal 
+		Reflections possible - none
+  
+  This will show you the list of possible screen resolutions. To reset the screen resolution to HD (1920x1080):
+  
+  	.. code-block :: bash
+		
+		xrandr -s 6
+ 
 ----
 
 **Fix or improve this documentation**
