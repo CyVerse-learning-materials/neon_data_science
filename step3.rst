@@ -13,8 +13,8 @@ NEON developed an `R and Python API <http://data.neonscience.org/data-api>`_ for
 ..
 	#### Comment: short text description goes here ####
 
-*Clone Github Repository*
-~~~~~~~~~~~~~~~~~~~~~~~~~
+*Cloning Jupyter Tutorials from Github*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We provide some example `Python3 Notebooks and R Markdown Notebooks <https://github.com/cyverse-gis/neon_data_science/tree/master/lessons>`_ for downloading lidar and hyperspectral data.
 
