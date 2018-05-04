@@ -47,11 +47,17 @@ Prerequisite: `Installed iRODS iCommands and initiated connection <step2.html>`_
 
 1. Use the ``ils`` command to view your files on the Data Store
 
-2. Use the `iget <https://docs.irods.org/4.2.2/icommands/user/#iget>`_ command to download files from the Data Store
+2. Change ownership of the directory where you want to download the data.
+	
+	.. code-block :: bash
+	
+		sudo chown $USER:iplant-everyone /scratch -R
+
+3. Use the `iget <https://docs.irods.org/4.2.2/icommands/user/#iget>`_ command to download files from the Data Store
 
   .. code-block :: bash
   
-    iget -KPQbrvf /iplant/home/user/neon/L1/DiscreteLidar/classified_points /home/user/Downloads
+    iget -KPQbrvf /iplant/home/shared/NEON_data_institute_2018/2016_Campaign/HARV/L1/DiscreteLidar/ClassifiedLaz /scratch/2016_Campaign/HARV/L1/DiscreteLidar/ClassifiedLaz
     
 In this example we are using the flags to:
 
@@ -70,7 +76,7 @@ In this example we are using the flags to:
 
   .. code-block :: bash
   
-    iput -KPQbrvf /home/user/neon_data_science/results /iplant/home/user/neon/results
+    iput -KPQbrvf /scratch/2016_Campaign/HARV/L1/DiscreteLidar/some_results /iplant/home/$USER/neon/results
 
 Note, we are using the same flags as the ``iget`` statement above.
 
@@ -98,8 +104,6 @@ The iRODS Client is not suitable for downloading hundreds of files, but it is us
 	4. Primary menu titles in double quotes: Under "Input" choose...
 	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
 	####
-
-----
 
 ----
 
