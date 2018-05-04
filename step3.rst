@@ -35,7 +35,6 @@ In the terminal:
 
 3. Follow the notebook instructions.
 
-
 *Download data from CyVerse DataStore in Bash*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -75,8 +74,8 @@ In this example we are using the flags to:
       -v  verbose
       -f  force - write local files even it they exist already (overwrite them)
 
-*Upload data to the CyVerse DataStore*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Upload data to the CyVerse DataStore in Bash*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Use the `iput <https://docs.irods.org/4.2.2/icommands/user/#iput>`_ command to upload files to the Data Store
 
@@ -85,6 +84,18 @@ In this example we are using the flags to:
     iput -KPQbrvf /scratch/2016_Campaign/HARV/L1/DiscreteLidar/some_results /iplant/home/$USER/neon/results
 
 Note, we are using the same flags as the ``iget`` statement above.
+
+*Download data from CyVerse DataStore with CyberDuck*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After you've set up `Cyberduck to access your CyVerse DataStore <http://cyberduck-quickstart.readthedocs.io/en/latest/>`_, you can click and drag and drop files to your localhost; or drag and drop files into a second CyberDuck window that is connected to another data source.
+
+.. Note::
+
+	Dragging and dropping data with Cyberduck will cause the data to be streamed down to your localhost and then uploaded back to the second remotehost. This will greatly reduce the speed with which you transfer files.
+	
+	It is strongly suggested you use the `Cyberduck CLI tool <https://duck.sh>`_ to move files between two remote data stores. 
+
 
 *Jupyter Lab Google Drive Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
