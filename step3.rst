@@ -4,10 +4,11 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Using the NEON Data API w/ Python
----------------------------------
+NEON Data API w/ Python
+-----------------------
 
-**Description: Downloading data in Jupyter Notebooks**
+NEON developed an `R and Python API <http://data.neonscience.org/data-api>`_ for downloading data from their data store.
+
 
 ..
 	#### Comment: short text description goes here ####
@@ -15,11 +16,11 @@ Using the NEON Data API w/ Python
 *Clone Github Repository*
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Example notebooks are hosted online on the CyVerse GIS Github. 
+We provide some example `Python3 Notebooks and R Markdown Notebooks <https://github.com/cyverse-gis/neon_data_science/tree/master/lessons>`_ for downloading lidar and hyperspectral data.
 
 .. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
 
-Prerequisite: `Launched Jupyter Notebook or Lab on VM <step1.html>`_
+Prerequisite: `Installed Anaconda and RStudio-Server, launched Jupyter Notebook or Lab <step1.html>`_
 
 In the terminal:
 
@@ -30,9 +31,9 @@ In the terminal:
     git clone https://github.com/cyverse-gis/neon_data_science
     cd neon_data_science/lessons
 
-2. Select a notebook in Jupyter and start it.
+2. From Jupyter Notebook or Lab select a data download notebook.
 
-3. Follow notebook instructions.
+3. Follow the notebook instructions.
 
 
 *Download data from CyVerse DataStore in Bash*
@@ -76,7 +77,7 @@ Note, we are using the same flags as the ``iget`` statement above.
 *Jupyter Lab Google Drive Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After you've setup your Jupyter Lab, you can view files in your Google Drive and move them onto the VM.
+Google Drive will ask for some authentication through your browser with a token. After you authenticate you can view files in your Google Drive and move them onto the VM.
 
 
 ..
