@@ -208,11 +208,15 @@ To request that your instance be imaged click the "Image" button from Actions.
 *EZ Installation of Project Jupyter*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For more details visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_ on using `ez`. There are instructions for `ez` installation of Docker, Singularity, and Anaconda.
+We install Project Jupyter (Notebooks and Lab) using the `Anaconda distribution <https://www.anaconda.com/>`_. Within the Anaconda distribution is the ``conda`` package manager which can be used to both build and install software. 
 
-If you're on an instance which already has Anaconda installed, you'll still need to re-run `ez` to restart the Anaconda virtual enivronment. 
+Anaconda different than a basic Python installation. It serves as both a package manager and an environment. While this has many benefits, it also adds some complexity to running your Python environments. Still confused? Read about the `myths and misconceptions of Anaconda <http://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/>`_.
 
-1. Install Anaconda with Python3 (`ez` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
+For more details about installing software on Atmosphere visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_. There are instructions for ``ez`` installation of Docker, Singularity, and Anaconda.
+
+If you're on an instance which already has Anaconda installed, you'll still need to re-run ``ez`` to restart the Anaconda virtual environment. 
+
+1. Install Anaconda with Python3 (``ez`` comes preloaded on featured instances on Atmosphere and Jetstream) by typing:
 
 	.. code-block :: bash
 
@@ -265,7 +269,7 @@ RStudio can be installed in several ways.
 
 First, you can follow the RStudio-Server `instructions for Linux <https://www.rstudio.com/products/rstudio/download-server/>`_
 
-Second, you can use Docker (following the same `ez` `documentation <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/index.html>`_ as for Anaconda). We suggest using containers from Docker Hub `Rocker <https://hub.docker.com/r/rocker/geospatial/>`_ on the instance.
+Second, you can use Docker (following the same ``ez`` `documentation <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/index.html>`_ as for Anaconda). We suggest using containers from Docker Hub `Rocker <https://hub.docker.com/r/rocker/geospatial/>`_ on the instance.
 
 Third, you can use `Anaconda <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/rstudio.html>`_ 
 
