@@ -53,7 +53,13 @@ Prerequisite: `Installed iRODS iCommands and initiated connection <step2.html>`_
 	
 		sudo chown $USER:iplant-everyone /scratch -R
 
-3. Use the `iget <https://docs.irods.org/4.2.2/icommands/user/#iget>`_ command to download files from the Data Store
+3. Create a new directory in ``/scratch`` 
+
+	.. code-block :: bash
+	
+		mkdir -p /scratch/2016_Campaign/HARV/L1/DiscreteLidar/
+
+4. Use the `iget <https://docs.irods.org/4.2.2/icommands/user/#iget>`_ command to download files from the Data Store
 
   .. code-block :: bash
   
