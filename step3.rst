@@ -42,7 +42,7 @@ CyVerse uses a system called `iRODS <https://docs.irods.org/>`_ to move files on
 
 iRODS uses multi-threaded file transfers for faster downloads and uploads than traditional ``wget`` or ``curl`` 
 
-Prerequisite: `Installed iRODS iCommands and initiated connection <step2.rst>`_
+Prerequisite: `Installed iRODS iCommands and initiated connection <step2.html>`_
 
 1. Use the ``ils`` command to view your files on the Data Store
 
