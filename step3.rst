@@ -79,6 +79,15 @@ Note, we are using the same flags as the ``iget`` statement above.
 
 Google Drive will ask for some authentication through your browser with a token. After you authenticate you can view files in your Google Drive and move them onto the VM.
 
+If you have any data on Google Drive, you can drag and drop them onto your VM.
+
+
+*Jupyter Lab iRODS Client*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After you've authenticated to CyVerse, you will be able to view your data store files.
+
+The iRODS Client is not suitable for downloading hundreds of files, but it is useful for finding files and copying their URLs.
 
 ..
 	#### Comment: Suggested style guide:
@@ -91,9 +100,6 @@ Google Drive will ask for some authentication through your browser with a token.
 	####
 
 ----
-
-**Description of output and results**
-
 
 ----
 
