@@ -340,7 +340,9 @@ Restart the server
 
 **Option 1: SSH tunnel**
 
-2. Open a new terminal on your localhost or Web Shell tab in browser. 
+You must have the ability to use ``ssh`` on your localhost to use this method.
+
+2. Open a new terminal on your localhost. 
 
 	.. code-block :: bash
 	
@@ -354,7 +356,9 @@ Restart the server
 
 **Option 2: Caddy**
 
-2. In the terminal:
+You can use this method with ``tmux`` in the Web Shell
+
+2. In the terminal start a new ``tmux`` session. Then copy/paste the following:
 
 	.. code-block :: bash
 	
@@ -367,9 +371,11 @@ Restart the server
 		curl https://getcaddy.com | bash -s personal http.nobots
 		caddy
 
-Caddy will output a secure url `https://` for the Atmosphere VM which you can then connect in a new browser tab.
+Caddy will output a secure URL `https://` for the Atmosphere VM which you can then connect in a new browser tab.
+-
+3. Copy / Paste the URL `https://vm142-xx.cyverse.org` into a new browser tab.
 
-3. Copy / Paste the `https://` url into a new browser tab.
+4. Detach the ``tmux`` window by holding down ``ctrl + b`` and then press ``d``. 
 
 ..
 	#### Comment: Suggested style guide:
