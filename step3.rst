@@ -19,7 +19,7 @@ Example notebooks are hosted online on the CyVerse GIS Github.
 
 .. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
 
-Prerequisite: `Launched Jupyter Notebook or Lab on VM <step1.rst>`_
+Prerequisite: `Launched Jupyter Notebook or Lab on VM <step1.html>`_
 
 In the terminal:
 
