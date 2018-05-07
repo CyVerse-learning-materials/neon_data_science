@@ -365,7 +365,7 @@ You can use this method with ``tmux`` in the Web Shell
 		curl https://getcaddy.com | bash -s personal http.nobots
 		caddy
 
-	Caddy will output a secure URL `https://` for the Atmosphere VM which you can then connect in a new browser tab.
+	The `Caddyserver <https://caddyserver.com/>`_ will output a secure URL `https://` for the Atmosphere VM which you can then connect in a new browser tab.
 
 3. Copy / Paste the URL ``https://vm142-xx.cyverse.org`` into a new browser tab.
 
