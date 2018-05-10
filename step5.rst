@@ -31,18 +31,21 @@ Build dependencies:
 	mkdir -p $WORKSPACE
 	cd $WORKSPACE
 
-Run the container:
+Run the container (detached):
 
     .. code-block :: bash
-    
-        docker run -it -p "127.0.0.1:8081:8080" -v "$WORKSPACE:/content" -e "PROJECT_ID=$GCP_PROJECT_ID" $CONTAINER_IMAGE_NAME
+   
+        docker run -it -d -p "127.0.0.1:8081:8080" -v "$WORKSPACE:/content" -e "PROJECT_ID=$GCP_PROJECT_ID" $CONTAINER_IMAGE_NAME
 
-Establish Secure Connection:
+Establish Secure Connection with `Caddy <https://caddyserver.com/>`_:
+
+    .. code-block :: bash
+    	tmux
 
     .. code-block :: bash
     
     	echo "$(hostname)
-	proxy / 127.0.0.1:8081 {
+	proxy / 127.0.0.1:8080 {
 	    websocket
 	    transparent
 	}
