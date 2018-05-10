@@ -33,6 +33,7 @@ Contents
 	Setting up Data Clients <step2.rst>
 	Data transfer <step3.rst>
 	GIS with Containers <step4.rst>
+	Google Earth Engine API <step5.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
