@@ -36,7 +36,20 @@ Run the container:
     .. code-block :: bash
     
         docker run -it -p "127.0.0.1:8081:8080" -v "$WORKSPACE:/content" -e "PROJECT_ID=$GCP_PROJECT_ID" $CONTAINER_IMAGE_NAME
-   
+
+Establish Secure Connection:
+
+    .. code-block :: bash
+    
+    	echo "$(hostname)
+	proxy / 127.0.0.1:8081 {
+	    websocket
+	    transparent
+	}
+	" > Caddyfile
+	curl https://getcaddy.com | bash -s personal http.nobots
+	caddy
+
 Download Data
 ~~~~~~~~~~~~~
 
