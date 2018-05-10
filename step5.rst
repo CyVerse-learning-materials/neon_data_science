@@ -22,20 +22,20 @@ Build dependencies:
 
 	.. code-block :: bash
   
-    ezd
-    sudo usermod -aG docker $USER
-  
-		export GCP_PROJECT_ID=gee-projects
-    export CONTAINER_IMAGE_NAME=gcr.io/earthengine-project/datalab-ee:latest
-    export WORKSPACE=${HOME}/workspace/datalab-ee
-    mkdir -p $WORKSPACE
-    cd $WORKSPACE
+	    ezd
+	    sudo usermod -aG docker $USER
+
+			export GCP_PROJECT_ID=gee-projects
+	    export CONTAINER_IMAGE_NAME=gcr.io/earthengine-project/datalab-ee:latest
+	    export WORKSPACE=${HOME}/workspace/datalab-ee
+	    mkdir -p $WORKSPACE
+	    cd $WORKSPACE
 
 Run the container:
 
-  .. code-block :: bash
+	.. code-block :: bash
     
-    docker run -it -p "127.0.0.1:8081:8080" -v "$WORKSPACE:/content" -e "PROJECT_ID=$GCP_PROJECT_ID" $CONTAINER_IMAGE_NAME
+    		docker run -it -p "127.0.0.1:8081:8080" -v "$WORKSPACE:/content" -e "PROJECT_ID=$GCP_PROJECT_ID" $CONTAINER_IMAGE_NAME
    
 Download Data
 ~~~~~~~~~~~~~
