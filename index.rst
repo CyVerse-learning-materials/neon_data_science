@@ -149,7 +149,7 @@ Here are the tested Ubuntu images.
       - 1.6
       - Ubuntu 16.04 non-GUI Base
       -	`Image <https://atmo.cyverse.org/application/images/1420>`_
-     * - Ubuntu 18.04 GUI
+    * - Ubuntu 18.04 GUI
       - 1.0
       - Ubuntu 18.04 GUI XFCE Base
       -	`Image <https://atmo.cyverse.org/application/images/1556`_
