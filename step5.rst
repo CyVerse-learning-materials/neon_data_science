@@ -18,26 +18,30 @@ Working with Google Earth Engine API
 
 Requirements: Docker
 
-Build dependencies:
+Build Dependencies:
 
     .. code-block :: bash
     
-    	ezd
+    	ezd -P # In this example I'm also installing Portainer.io
 	sudo usermod -aG docker $USER
 
-	export GCP_PROJECT_ID=gee-projects
+Set the paths:
+
+    .. code-block :: bash
+    
+    	export GCP_PROJECT_ID=gee-projects
 	export CONTAINER_IMAGE_NAME=gcr.io/earthengine-project/datalab-ee:latest
 	export WORKSPACE=${HOME}/workspace/datalab-ee
 	mkdir -p $WORKSPACE
 	cd $WORKSPACE
 
-Run the container (detached):
+Run the Container (detached):
 
     .. code-block :: bash
    
         docker run -it -d -p "127.0.0.1:8081:8080" -v "$WORKSPACE:/content" -e "PROJECT_ID=$GCP_PROJECT_ID" $CONTAINER_IMAGE_NAME
 
-Establish Secure Connection with `Caddy <https://caddyserver.com/>`_:
+Establish a secure connection with `Caddy <https://caddyserver.com/>`_:
 
     .. code-block :: bash
     	tmux
