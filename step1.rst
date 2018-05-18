@@ -80,7 +80,7 @@ Here are the tested Ubuntu images.
     * - Ubuntu 18.04 GUI
       - 1.0
       - Ubuntu 18.04 GUI XFCE Base
-      -	`Image <https://atmo.cyverse.org/application/images/1556`_
+      -	`Image <https://atmo.cyverse.org/application/images/1556>`_
     * - Ubuntu 18.04 non-GUI
       - 1.0
       - Ubuntu 18.04 non-GUI Base
