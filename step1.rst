@@ -258,7 +258,9 @@ If you're on an instance which already has Anaconda installed, you'll still need
 		
 			# R JavaScript Ruby
 			sudo add-apt-repository ppa:chronitis/jupyter -y
+	
 	R Kernel
+	
 		.. code-block :: bash
 		
 			conda install -c r irkernel
