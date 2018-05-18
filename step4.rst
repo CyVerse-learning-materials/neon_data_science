@@ -27,13 +27,13 @@ If you want to develop your own containers you can download the example Singular
 
 To `install Singularity <https://singularity.lbl.gov/install-linux>`_ on linux follow these instructions.
 
-CyVerse recently taught a `Container Bootcamp <https://cyverse-container-camp-workshop-2018.readthedocs-hosted.com/en/latest/index.html>`_ with in depth instructions for working with Docker and Singularity.
+CyVerse recently taught a `Container BootCamp <https://cyverse-container-camp-workshop-2018.readthedocs-hosted.com/en/latest/index.html>`_ with in depth instructions for working with Docker and Singularity.
 
-As of early May 2018, Singularity is version `2.5.0` 
+As of early May 2018, Singularity is version `2.5.1` 
 
   .. code-block :: bash
   
-    VERSION=2.4.5
+    VERSION=2.5.1
     wget https://github.com/singularityware/singularity/releases/download/$VERSION/singularity-$VERSION.tar.gz
     tar xvf singularity-$VERSION.tar.gz
     cd singularity-$VERSION
