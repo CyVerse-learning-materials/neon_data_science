@@ -56,18 +56,35 @@ From your Project folder, you can select "New" and "Instance"
 .. list-table::
     :header-rows: 1
 
+**Atmosphere Image(s):**
+
+Here are the tested Ubuntu images. 
+
+**Warning:** The latest version of Ubuntu (18.04) may not have current packages for some software.
+
+.. list-table::
+    :header-rows: 1
+
     * - Image Name
       - Version
       - Description
       - Link
     * - Ubuntu 16.04 GUI
       - 2.1
-      - XFCE Base, iRODS 
+      - Ubuntu 16.04 GUI XFCE Base
       -	`Image <https://atmo.cyverse.org/application/images/1453>`_
     * - Ubuntu 16.04 non-GUI
       - 1.6
-      - non-GUI Base, iRODS
+      - Ubuntu 16.04 non-GUI Base
       -	`Image <https://atmo.cyverse.org/application/images/1420>`_
+    * - Ubuntu 18.04 GUI
+      - 1.0
+      - Ubuntu 18.04 GUI XFCE Base
+      -	`Image <https://atmo.cyverse.org/application/images/1556`_
+    * - Ubuntu 18.04 non-GUI
+      - 1.0
+      - Ubuntu 18.04 non-GUI Base
+      -	`Image <https://atmo.cyverse.org/application/images/1552>`_ 
 
 **Suggested Jetstream Image(s):**
 
