@@ -241,15 +241,32 @@ If you're on an instance which already has Anaconda installed, you'll still need
 		
 			# R JavaScript Ruby
 			sudo add-apt-repository ppa:chronitis/jupyter -y
+	R Kernel
+		.. code-block :: bash
+		
+			conda install -c r irkernel
+	
+	JavaScript and Ruby Kernel
+	
+		.. code-block :: bash
+		
 			sudo apt-get update
-			sudo apt-get install -y irkernel ijavascript iruby 
-			# Python2
+			sudo apt-get install -y ijavascript iruby
+			
+	Build Python2 Kernel
+	
+		.. code-block :: bash
+		
 			conda create -n ipykernel_py2 python=2 ipykernel 
 			source activate ipykernel_py2    
 			python -m ipykernel install --user
 			source deactivate ipykernel_py2
 			conda activate base # switch back to base Python3 environment
-			# Bash
+	
+	Bash Kernel
+	
+		.. code-block ::bash
+		
 			pip install bash_kernel 
 			python -m bash_kernel.install
 	
