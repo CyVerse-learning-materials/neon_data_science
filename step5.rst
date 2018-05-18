@@ -22,7 +22,7 @@ Build Dependencies:
 
     .. code-block :: bash
     
-    	ezd -P # In this example I'm also installing Portainer.io
+    	ezd -p # In this example I'm also installing Portainer.io
 	sudo usermod -aG docker $USER
 
 Set the paths:
