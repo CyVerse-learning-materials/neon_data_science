@@ -252,7 +252,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
 
-	_`List of Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
+	`List of Jupyter Kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels/>`_
 	
 	**R Kernel**
 	
