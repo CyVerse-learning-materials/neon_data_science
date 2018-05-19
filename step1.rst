@@ -252,12 +252,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
 
-	##### _`List of Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
-
-		.. code-block :: bash
-		
-			# R JavaScript Ruby
-			sudo add-apt-repository ppa:chronitis/jupyter -y
+	_`List of Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
 	
 	**R Kernel**
 	
@@ -265,7 +260,17 @@ If you're on an instance which already has Anaconda installed, you'll still need
 		
 			conda install -c r irkernel
 	
+			
 	**JavaScript and Ruby Kernels**
+	
+	Add Jupyter PPA
+
+		.. code-block :: bash
+		
+			# R JavaScript Ruby
+			sudo add-apt-repository ppa:chronitis/jupyter -y
+	
+	Install kernels
 	
 		.. code-block :: bash
 		
