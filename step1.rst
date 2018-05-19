@@ -252,27 +252,27 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
 
-	Install additional `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
+	##### _`List of Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_
 
 		.. code-block :: bash
 		
 			# R JavaScript Ruby
 			sudo add-apt-repository ppa:chronitis/jupyter -y
 	
-	R Kernel
+	**R Kernel**
 	
 		.. code-block :: bash
 		
 			conda install -c r irkernel
 	
-	JavaScript and Ruby Kernel
+	**JavaScript and Ruby Kernels**
 	
 		.. code-block :: bash
 		
 			sudo apt-get update
 			sudo apt-get install -y ijavascript iruby
 			
-	Build Python2 Kernel
+	**Python2 Kernel**
 	
 		.. code-block :: bash
 		
@@ -282,9 +282,9 @@ If you're on an instance which already has Anaconda installed, you'll still need
 			source deactivate ipykernel_py2
 			conda activate base # switch back to base Python3 environment
 	
-	Bash Kernel
+	**Bash Kernel**
 	
-		.. code-block ::bash
+		.. code-block :: bash
 		
 			pip install bash_kernel 
 			python -m bash_kernel.install
