@@ -41,6 +41,13 @@ Data Download
 *Google Drive Jupyter Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Update Conda to latest
+
+	.. code-block :: bash
+	
+		conda update conda
+		conda update conda-build
+	
 Dependency: `Node.js 5+ <https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04>`_ 
 
 	.. code-block :: bash
