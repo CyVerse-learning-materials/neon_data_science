@@ -364,6 +364,16 @@ Restart the server
 
 4. You can launch Jupyter Lab by exiting the notebook and typing `jupyter lab` - but this will allow Lab to only be available on the localhost, with no way to connect from a remote terminal. Exit the notebook by pressing `ctrl + c` twice, and then start a `Jupyter Lab <https://github.com/jupyterlab/jupyterlab>`_.
 
+.. Note::
+
+	To ensure your session doesn't die when you close your terminal use `tmux` or `screen` to start your remote sessions and to detach the screen before exiting.
+
+	- detach screen: `ctrl + b` then `ctrl + d`
+
+	- list tmux sessions: ``tmux ls``
+
+	- re-attach screen: ``tmux attach -t <session id #>``
+
 *Establishing a Secure Connection*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -409,17 +419,6 @@ You can use this method with ``tmux`` in the Web Shell
 	The `Caddyserver <https://caddyserver.com/>`_ will output a secure URL `https://` for the Atmosphere VM which you can then connect in a new browser tab.
 
 3. Copy / Paste the URL ``https://vm142-xx.cyverse.org`` into a new browser tab.
-
-.. Note::
-
-	To ensure your session doesn't die when you close your terminal use `tmux` or `screen` to start your remote sessions and to detach the screen before exiting.
-
-	- detach screen: `ctrl + b` then `ctrl + d`
-
-	- list tmux sessions: ``tmux ls``
-
-	- re-attach screen: ``tmux attach -t <session id #>``
-
 
 ..
 	#### Comment: Suggested style guide:
