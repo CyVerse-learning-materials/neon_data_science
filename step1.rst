@@ -460,11 +460,6 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 
-.. |atmo-1| image:: ../img/atmo-1.png
-    :width: 750
-    :height: 700
-
-.. |atmo_resources| image:: ../img/atmo_resources.png
+.. |atmo_resources| image:: ./img/atmo_resources.png
     :width: 750
     :height: 600
-.. _atmo_resources: https://atmo.cyverse.org/ 
