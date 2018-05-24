@@ -463,5 +463,9 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
 .. _Home_Icon: http://learning.cyverse.org/
 
 .. |atmo_resources| image:: ./img/atmo_resources.png
+    :width: 750
+    :height: 500
 
 .. |atmo_request| image:: ./img/atmo_request.png
+    :width: 750
+    :height: 500
