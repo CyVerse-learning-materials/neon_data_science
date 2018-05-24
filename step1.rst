@@ -469,5 +469,3 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-
-    
