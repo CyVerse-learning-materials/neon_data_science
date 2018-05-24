@@ -14,7 +14,11 @@ Launching a Data Science Virtual Machine
 
 CyVerse operates a cloud service called `Atmosphere <http://www.cyverse.org/atmosphere>`_. Users can request up to 2,000 allocation units [units are hours (hr)] per month. E.g. a 1-core instance uses 1 AU/hr, a 4-core instance uses 4 AU/hr, and a 16-core instance uses 16 AU/hr. Allocations are automatically reset to 128 AU on the 1st of each month. 
 
-Users can request more AU by clicking the Request More Resources button in the Atmosphere UI. You can also get help by asking questions in the Intercom (blue button in the lower right of the CyVerse website pages). Requests are typically approved in <1 hour during business hours, and <24 hours on nights and weekends. 
+Users can request more AU by clicking the Request More Resources button in the Atmosphere UI. You can also get help by asking questions in the Intercom (blue button in the lower right of the CyVerse website pages). 
+
+|atmo_resources|_
+
+Requests are typically approved in <1 hour during business hours, and <24 hours on nights and weekends. 
 
 `XSEDE Jetstream <https://portal.xsede.org/jetstream>`_ uses the same UI interface as Atmosphere. Startup allocations typically range from 25,000 - 250,000 AU per year. Research allocations between 250,000 to several million AU are also available through XSEDE. 
 
@@ -458,3 +462,6 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
 .. |atmo-1| image:: ../img/atmo-1.png
   :width: 750
   :height: 700
+
+.. |atmo_resources| image:: ./img/atmo_resources.png
+  :width: 750
