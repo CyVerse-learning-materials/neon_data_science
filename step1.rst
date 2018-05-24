@@ -18,6 +18,8 @@ Users can request more AU by clicking the Request More Resources button in the A
 
 |atmo_resources|_
 
+|atmo_request|_
+
 Requests are typically approved in <1 hour during business hours, and <24 hours on nights and weekends. 
 
 `XSEDE Jetstream <https://portal.xsede.org/jetstream>`_ uses the same UI interface as Atmosphere. Startup allocations typically range from 25,000 - 250,000 AU per year. Research allocations between 250,000 to several million AU are also available through XSEDE. 
@@ -461,5 +463,5 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
 .. _Home_Icon: http://learning.cyverse.org/
 
 .. |atmo_resources| image:: ./img/atmo_resources.png
-    :width: 750
-    :height: 600
+
+.. |atmo_request| image:: ./img/atmo_request.png
