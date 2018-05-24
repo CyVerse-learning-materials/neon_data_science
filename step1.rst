@@ -16,11 +16,9 @@ CyVerse operates a cloud service called `Atmosphere <http://www.cyverse.org/atmo
 
 Users can request more AU by clicking the Request More Resources button in the Atmosphere UI. You can also get help by asking questions in the Intercom (blue button in the lower right of the CyVerse website pages). 
 
-|CyVerse logo|_
+|atmo_resources|
 
-|atmo_resources|_
-
-|atmo_request|_
+|atmo_request|
 
 Requests are typically approved in <1 hour during business hours, and <24 hours on nights and weekends. 
 
