@@ -16,6 +16,8 @@ CyVerse operates a cloud service called `Atmosphere <http://www.cyverse.org/atmo
 
 Users can request more AU by clicking the Request More Resources button in the Atmosphere UI. You can also get help by asking questions in the Intercom (blue button in the lower right of the CyVerse website pages). 
 
+|CyVerse logo|_
+
 |atmo_resources|_
 
 |atmo_request|_
@@ -456,7 +458,7 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
     :width: 750
     :height: 500
 
-.. |atmo_request| image:: ./img/cyverse_rgb.png
+.. |atmo_request| image:: ./img/atmo_request.png
     :width: 750
     :height: 500
     
