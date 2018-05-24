@@ -452,7 +452,7 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-.. |atmo_resources| image:: ./img/cyverse_rgb.png
+.. |atmo_resources| image:: ./img/atmo_resources.png
     :width: 750
     :height: 500
 
