@@ -453,7 +453,9 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
 .. |CyVerse logo| image:: ./img/cyverse_rgb.png
     :width: 500
     :height: 100
+    
 .. _CyVerse logo: http://learning.cyverse.org/
+
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25
     :height: 25
@@ -463,5 +465,6 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
   :width: 750
   :height: 700
 
-.. |atmo_resources| image:: ./img/atmo_resources.png
+.. |atmo_resources| image:: ../img/atmo_resources.png
   :width: 750
+  :height: 600
