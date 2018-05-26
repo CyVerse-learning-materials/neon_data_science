@@ -232,7 +232,7 @@ To request that your instance be imaged click the "Image" button from Actions.
 
 We install Project Jupyter (Notebooks and Lab) using the `Anaconda distribution <https://www.anaconda.com/>`_. Within the Anaconda distribution is the ``conda`` package manager which can be used to both build and install software. 
 
-Anaconda different than a basic Python installation. It serves as both a package manager and an environment. While this has many benefits, it also adds some complexity to running your Python environments. Still confused? Read about the `myths and misconceptions of Anaconda <http://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/>`_.
+Anaconda is different than a basic Python installation. It serves as both a package manager and an environment. While this has many benefits, it also adds some complexity to running your Python environments. Still confused? Read about the `myths and misconceptions of Anaconda <http://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/>`_.
 
 For more details about installing software on Atmosphere visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_. There are instructions for ``ez`` installation of Docker, Singularity, and Anaconda.
 
@@ -242,7 +242,6 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 	.. code-block :: bash
 
-		sudo apt-get update
 		ezj
 
 2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
