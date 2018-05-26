@@ -3,9 +3,8 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-
-Launching a Data Science Virtual Machine
-----------------------------------------
+Data Science Virtual Machines on Atmosphere or Jetstream
+--------------------------------------------------------
 
 **Description: Provision VM for analyzing NEON AOP data**
 
