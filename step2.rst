@@ -37,6 +37,9 @@ Data Download
     * - CyberDuck
       - File Share UI
       - `Using with CyVerse <http://cyberduck-quickstart.readthedocs.io/en/latest/>`_
+    * - Guacamole 
+      - Atmosphere Browser Tabs
+      - 
 
 *Google Drive Jupyter Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,6 +160,17 @@ To install on the VM:
 	4. Primary menu titles in double quotes: Under "Input" choose...
 	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
 	####
+
+*Guacamole*
+~~~~~~~~~~~
+
+Open the Web Desktop or Web Shell from the Atmosphere UI
+
+``Ctrl + Alt + Shift`` to open the side bar.
+
+Click on ``Devices``
+
+Select the ``Home`` folder (or a folder that your $USER has ownership of) and upload data.
 
 ----
 
