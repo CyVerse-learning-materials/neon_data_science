@@ -141,6 +141,10 @@ Here are the tested Ubuntu images.
       - Version
       - Description
       - Link
+    * - Ubuntu 18.04 GUI
+      - 1.0
+      - Ubuntu 18.04 XFCE Base
+      - `Image <https://atmo.cyverse.org/application/images/1556>`_ 
     * - Ubuntu 16.04 GUI
       - 2.1
       - Ubuntu 16.04 GUI XFCE Base
@@ -167,6 +171,10 @@ Here are the tested Ubuntu images.
       - Version
       - Description
       - Link
+     * - Ubuntu 18.04 GUI
+      - 1.2
+      - Ubuntu 18.04 GUI Devel and Docker
+      - `Image <https://use.jetstream-cloud.org/application/images/717>`_ 
     * - Ubuntu 16.04 GUI
       - 1.13
       - Ubuntu 16.04 LTS Development + GUI support + Docker
