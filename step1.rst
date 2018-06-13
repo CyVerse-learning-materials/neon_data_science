@@ -291,6 +291,28 @@ If you're on an instance which already has Anaconda installed, you'll still need
 			source deactivate ipykernel_py2
 			conda activate base # switch back to base Python3 environment
 	
+	**Julia Kernel**
+	
+		First, install `Julia <https://julialang.org/downloads/>`_, here we are installing v0.6.
+		
+		Once Julia as been installed, run ``julia`` from the prompt. 
+		
+		.. code-block :: bash
+			
+			wget https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.3-linux-x86_64.tar.gz
+ 			tar xvzf julia-0.6.3-linux-x86_64.tar.gz
+ 			sudo mv julia-d55cadc350/ /opt/julia
+			rm -rf julia-0.6.3-linux-x86_64.tar.gz 
+ 			sudo ln -s /opt/julia/bin/julia /usr/local/bin/julia
+			julia
+		
+		Now, install the iJulia Kernel.
+	
+		.. code-block :: bash
+			
+			Pkg.add("IJulia"
+			
+
 	**Bash Kernel**
 	
 		.. code-block :: bash
