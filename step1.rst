@@ -234,7 +234,7 @@ We install Project Jupyter (Notebooks and Lab) using the `Anaconda distribution 
 
 Anaconda is different than a basic Python installation. It serves as both a package manager and an environment. While this has many benefits, it also adds some complexity to running your Python environments. Still confused? Read about the `myths and misconceptions of Anaconda <http://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/>`_.
 
-For more details about installing software on Atmosphere visit our `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_. There are instructions for ``ez`` installation of Docker, Singularity, and Anaconda.
+For more details about installing software on Atmosphere visit the CyVerse `Data Science Quickstart Tutorial <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_ or the `Jetstream EZ Tutorial <https://iujetstream.atlassian.net/wiki/spaces/JWT/pages/348586006/Jetstream+Atmosphere+EZ+tools>`_. There are instructions for ``ez`` installation of Docker, Singularity, and Anaconda.
 
 If you're on an instance which already has Anaconda installed, you'll still need to re-run ``ez`` to restart the Anaconda virtual environment. 
 
