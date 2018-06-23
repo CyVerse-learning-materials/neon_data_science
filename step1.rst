@@ -258,28 +258,30 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 	`List of Jupyter Kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels/>`_
 	
-	**R Kernel**
+	**R**
 	
 		.. code-block :: bash
 		
 			conda install -c r irkernel
 	
-			
-	**JavaScript and Ruby Kernels**
+	**JavaScript** 
 	
-	Add Jupyter PPA
+		.. code-block :: bash
+		
+			sudo apt-get install nodejs-legacy npm ipython ipython-notebook
+			sudo npm install -g ijavascript
+			ijsinstall
+	
+	**Ruby**
+	
+		Add Jupyter PPA
 
 		.. code-block :: bash
 		
-			# R JavaScript Ruby
 			sudo add-apt-repository ppa:chronitis/jupyter -y
-	
-	Install kernels
-	
-		.. code-block :: bash
-		
 			sudo apt-get update
-			sudo apt-get install -y ijavascript iruby
+			sudo apt-get install -y iruby
+			
 			
 	**Python2 Kernel**
 	
@@ -306,12 +308,15 @@ If you're on an instance which already has Anaconda installed, you'll still need
  			sudo ln -s /opt/julia/bin/julia /usr/local/bin/julia
 			julia
 		
-		Now, install the iJulia Kernel.
+		Now, from Julia prompt install the iJulia Kernel.
 	
 		.. code-block :: bash
 			
-			Pkg.add("IJulia"
-			
+			Pkg.add("IJulia")
+			ENV["JUPYTER"] = "/opt/anaconda3/bin/jupyter"
+			Pkg.add("Feather")
+			Pkg.add("DataFrames")
+			Pkg.add("NamedArrays")
 
 	**Bash Kernel**
 	
@@ -320,7 +325,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 			pip install bash_kernel 
 			python -m bash_kernel.install
 	
-	Geospatial dependencies (GDAL)
+	**Geospatial dependencies**
 	
 		.. code-block :: bash
 		
@@ -328,6 +333,16 @@ If you're on an instance which already has Anaconda installed, you'll still need
 			sudo apt update
 			sudo apt install gdal-bin python-gdal python3-gdal libgdal1-dev
 	
+	**Script of Scripts**
+	
+		`Official documentation <https://vatlab.github.io/sos-docs/#runningsos>`_ 
+		
+		.. code-block :: bash
+		
+			pip install sos
+			pip install sos-notebook
+			python -m sos_notebook.install
+			
 	
 *Installing RStudio-Server*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
