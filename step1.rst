@@ -244,9 +244,11 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 		ezj
 
-2. Once the installation completes, a Jupyter Notebook will be running on the VM. 
+2. Once the installation completes, you're done! A Jupyter Notebook should now be running on the VM.
 
-3. Click the link to open a basic notebook. 
+ |notebook_terminal|
+
+3. Click the link showing the notebook URL (notice this is not the localhost:8888). 
 
 .. Note::
 
@@ -494,7 +496,11 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
 .. |atmo_request| image:: ./img/atmo_request.png
     :width: 750
     :height: 500
-    
+
+.. |notebook_terminal| image:: ./img/notebook_terminal.png
+    :width:750
+    :height: 500
+
 .. |CyVerse logo| image:: ./img/cyverse_rgb.png
     :width: 500
     :height: 100
