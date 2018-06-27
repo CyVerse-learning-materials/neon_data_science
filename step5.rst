@@ -11,6 +11,10 @@ Working with Google Earth Engine API
 ..
 	#### Comment: short text description goes here ####
 
+Guillermo de Ponce from the Tucson Southwest Watershed Research Center has developed some `NEON tuturials on Google Earth Engine <https://www.tucson.ars.ag.gov/notebooks/uploading_data_2_gee.html>`_
+
+`Earth Engine App <https://code.earthengine.google.com/1e01ae688153143f97f352704de106b8>`_
+
 *Install Earth Engine API*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
