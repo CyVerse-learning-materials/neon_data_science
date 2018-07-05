@@ -99,8 +99,20 @@ Run the container with the ``singularity exec`` command to use the GUI applicati
   
     singularity exec osgeo.simg grass74
 
-GRASS has a problem with its environment variables not being set within the container. You can do  this by hand while the container is running:
+GRASS 7.4 has a problem with its `environment variables <https://grass.osgeo.org/grass74/manuals/variables.html>`_ not being set within the container. You can do this by hand while the container is running:
 
+  .. code-block :: bash
+    
+    singularity shell osgeo.simg 
+    
+    GISBASE=/opt/osgeo/grass-7.4.0
+    GRASS_PROJSHARE=/usr/share/proj
+    LD_LIBRARY_PATH=/opt/osgeo/lib:/opt/osgeo/grass-7.4.0/lib
+    PATH=/opt/osgeo/bin:/opt/osgeo/grass-7.4.0/bin:$PATH
+    PYTHONPATH=/opt/osgeo/lib/python3.6/site-packages
+    export GISBASE GRASS_PROJSHARE LD_LIBRARY_PATH PATH PYTHONPATH
+
+    grass74
 
 For QGIS:
 
