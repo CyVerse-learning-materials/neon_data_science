@@ -4,10 +4,14 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Working with QGIS, GRASS, SAGA-GIS
-----------------------------------
+Working with Docker and Singularity
+-----------------------------------
 
-**Description: Run GUI programs on the VM using Singularity Containers**
+CyVerse recently taught a `Container BootCamp <https://cyverse-container-camp-workshop-2018.readthedocs-hosted.com/en/latest/index.html>`_ with in depth instructions for working with Docker and Singularity.
+
+In these examples we'll use Singularity to launch both Docker and Singularity containers. 
+
+**Description: Run CLI and GUI programs on VMs using Docker & Singularity Containers**
 
 If you're running on Windows OS you can set up the `Windows-Linux subsystem <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_ to access a real Linux terminal. This will enable you to run secure shell connections to your VM.
 
@@ -16,8 +20,8 @@ Another option is to use the Atmosphere Web Desktop, which is running an XFCE De
 ..
 	#### Comment: short text description goes here ####
 
-*Build the Container yourself*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Build a Singularity Container yourself*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to develop your own containers you can download the example Singularity file from my `Github repository <https://github.com/tyson-swetnam/osgeo-singularity>`_ and make your own changes
 
@@ -26,8 +30,6 @@ If you want to develop your own containers you can download the example Singular
 `EZ Install Singularity on Atmosphere or Jetstream <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_
 
 To `install Singularity <https://singularity.lbl.gov/install-linux>`_ on linux follow these instructions.
-
-CyVerse recently taught a `Container BootCamp <https://cyverse-container-camp-workshop-2018.readthedocs-hosted.com/en/latest/index.html>`_ with in depth instructions for working with Docker and Singularity.
 
 As of early May 2018, Singularity is version `2.5.1` 
 
@@ -85,10 +87,11 @@ To run the container from the CLI:
   
       singularity shell osgeo.simg
 
-Calling the container from your Jupyter Notebook (Python3)
+Running a container from your Jupyter Notebook (Python3)
 
   .. code-block :: bash
 
+	
 
 *Run GUI Applications*
 ~~~~~~~~~~~~~~~~~~~~~~
