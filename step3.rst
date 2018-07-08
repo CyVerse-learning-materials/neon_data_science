@@ -110,7 +110,14 @@ If you have any data on Google Drive, you can drag and drop them onto your VM.
 
 After you've authenticated to CyVerse, you will be able to view your data store files.
 
-The iRODS Client is not suitable for downloading hundreds of files, but it is useful for finding files and copying their URLs.
+The `Jupyter iRODS Client <https://www.npmjs.com/package/@towicode/jupyterlab_irods>`_ is not suitable for downloading hundreds of files, but it is useful for finding files and copying their URLs.
+
+  .. code-block :: bash
+  
+	pip install jupyterlab_irods
+	jupyter serverextension enable --py jupyterlab_irods
+	jupyter labextension install @towicode/jupyterlab_irods
+
 
 ..
 	#### Comment: Suggested style guide:
