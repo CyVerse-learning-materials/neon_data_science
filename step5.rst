@@ -59,6 +59,13 @@ Establish a secure connection with `Caddy <https://caddyserver.com/>`_:
 	curl https://getcaddy.com | bash -s personal http.nobots
 	caddy
 
+*Use Google Colaboratory*
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Google has its own Jupyter service called 'Colaboratory'
+
+https://colab.research.google.com/
+
 Download Data
 ~~~~~~~~~~~~~
 
