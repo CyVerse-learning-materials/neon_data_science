@@ -18,6 +18,8 @@ Data Download
 ..
 	#### Comment: short text description goes here ####
 
+|Cyverse_data_services|
+
 ----
 
 **Data Sharing Services:**
@@ -190,6 +192,10 @@ Congratulations! You've established ways to get data to and from your VM!
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
+.. |Cyverse_data_services| image:: ./img/cyverse_data_services.png
+    :width: 750
+    :height: 500
+    
 .. |CyVerse logo| image:: ./img/cyverse_rgb.png
     :width: 500
     :height: 100
