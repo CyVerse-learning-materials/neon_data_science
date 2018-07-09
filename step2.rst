@@ -18,7 +18,7 @@ Data Download
 ..
 	#### Comment: short text description goes here ####
 
-|Cyverse_data_services|
+|Cyverse_data_services|_
 
 ----
 
