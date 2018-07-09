@@ -191,10 +191,6 @@ Congratulations! You've established ways to get data to and from your VM!
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
-
-.. |Cyverse_data_services| image:: ./img/Cyverse_data_services.png
-    :width: 750
-    :height: 500
     
 .. |CyVerse logo| image:: ./img/cyverse_rgb.png
     :width: 500
@@ -204,5 +200,9 @@ Congratulations! You've established ways to get data to and from your VM!
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25
     :height: 25
+
+.. |Cyverse_data_services| image:: ./img/Cyverse_data_services.png
+    :width: 750
+    :height: 500
     
 .. _Home_Icon: http://learning.cyverse.org/
