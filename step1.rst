@@ -260,12 +260,15 @@ If you're on an instance which already has Anaconda installed, you'll still need
         
 	**Down version Python 3.6 to 3.5**
 	
+	To use GDAL you may need to reverse version Python to an earlier version
+	
+	'Kernel installation instructions <https://ipython.readthedocs.io/en/stable/install/kernel_install.html>'_
+	
 		.. code-block :: bash
 			
 			python -m pip install ipykernel
 			python -m ipykernel install --user
 			
-
 		.. code-block :: bash
 
 			conda create -n ipykernel_py35 python=3.5 ipykernel
