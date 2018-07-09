@@ -18,11 +18,11 @@ Data Download
 ..
 	#### Comment: short text description goes here ####
 
-|Cyverse_data_services|_
-
 ----
 
 **Data Sharing Services:**
+
+|Cyverse_data_services|_
 
 .. list-table::
     :header-rows: 1
