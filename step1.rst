@@ -257,7 +257,22 @@ If you're on an instance which already has Anaconda installed, you'll still need
 		.. code-block :: bash
 
 			sudo chown $(id -u):$(id -g) /opt/anaconda3 -R
+        
+	**Down version Python 3.6 to 3.5**
+	
+		.. code-block :: bash
+			
+			python -m pip install ipykernel
+			python -m ipykernel install --user
+			
 
+		.. code-block :: bash
+
+			conda create -n ipykernel_py35 python=3.5 ipykernel
+			source activate ipykernel_py35    # On Windows, remove the word 'source'
+			python -m ipykernel install --user
+	
+	
 	`List of Jupyter Kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels/>`_
 	
 	**R**
