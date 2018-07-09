@@ -22,7 +22,7 @@ Data Download
 
 **Data Sharing Services:**
 
-|Cyverse_data_services|_
+|Cyverse_data_services|
 
 .. list-table::
     :header-rows: 1
