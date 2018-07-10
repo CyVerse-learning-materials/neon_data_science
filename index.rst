@@ -29,6 +29,7 @@ Contents
 	:maxdepth: 2
 
 	Home <self>
+	Prerequisites<#Prerequisites>
 	Launching a Data Science Virtual Machine <step1.rst>
 	Setting up Data Clients <step2.rst>
 	Data transfer <step3.rst>
