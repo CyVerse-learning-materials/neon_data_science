@@ -520,7 +520,7 @@ Congratulations - you've got a Virtual Machine ready to do some serious data sci
     :height: 500
 
 .. |notebook_terminal| image:: ./img/notebook_terminal.png
-    :width:750
+    :width: 750
     :height: 500
 
 .. |CyVerse logo| image:: ./img/cyverse_rgb.png
