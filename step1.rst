@@ -246,7 +246,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 
 2. Once the installation completes, you're done! A Jupyter Notebook should now be running on the VM.
 
- |notebook_terminal|
+|notebook_terminal|
 
 3. Click the link showing the notebook URL (notice this is not the localhost:8888). 
 
