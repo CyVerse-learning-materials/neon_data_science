@@ -70,10 +70,10 @@ Downloads, access, and services
     * - Jetstream access (Optional)
       - You must have registered with XSEDE
       - `Request Access <https://portal.xsede.org/my-xsede#/guest>`_
-    * - Cyberduck
+    * - Cyberduck (Optional)
       - Standalone program for uploading/downloading data to Data Store
       - `Download <https://cyberduck.io/>`_
-    * - Windows 10 Linux Subsystem
+    * - Windows 10 Linux Subsystem (Optional)
       - Install Ubuntu Bash on a Windows OS
       - `Installation Instructions <https://docs.microsoft.com/en-us/windows/wsl/install-win10/>`_
 
