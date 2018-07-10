@@ -46,6 +46,11 @@ Data Download
 *Google Drive Jupyter Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. Note::
+
+    As of July 2018, the Google Drive Jupyter Client has been deprecated. 
+
+
 Update Conda to latest
 
 	.. code-block :: bash
