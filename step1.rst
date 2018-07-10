@@ -262,7 +262,7 @@ If you're on an instance which already has Anaconda installed, you'll still need
 	
 	To use GDAL you may need to reverse version Python to an earlier version
 	
-	`Kernel installation instructions <https://ipython.readthedocs.io/en/stable/install/kernel_install.html>`_
+	`Kernel installation instructions <https://ipython.readthedocs.io/en/stable/install/kernel_install.html/>`_
 	
 		.. code-block :: bash
 			
