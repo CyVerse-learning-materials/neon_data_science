@@ -73,6 +73,9 @@ Downloads, access, and services
     * - Cyberduck
       - Standalone program for uploading/downloading data to Data Store
       - `Download <https://cyberduck.io/>`_
+    * - Windows 10 Linux Subsystem
+      - Install Ubuntu Bash on a Windows OS
+      - `Installation Instructions <https://docs.microsoft.com/en-us/windows/wsl/install-win10/>`_
 
 Platform(s)
 ~~~~~~~~~~~
