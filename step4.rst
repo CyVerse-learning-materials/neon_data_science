@@ -29,7 +29,7 @@ If you want to develop your own containers you can download the example Singular
 
 `EZ Install Singularity on Atmosphere or Jetstream <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/>`_
 
-To `install Singularity <https://singularity.lbl.gov/install-linux>`_ on linux follow these instructions.
+To `install Singularity <https://www.sylabs.io/docs/>`_ on linux follow these instructions.
 
 As of early May 2018, Singularity is version `2.5.1` 
 
