@@ -377,6 +377,14 @@ First, you can follow the RStudio-Server `instructions for Linux <https://www.rs
 
 Second, you can use Docker (following the same ``ez`` `documentation <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/index.html>`_ as for Anaconda). We suggest using containers from Docker Hub `Rocker <https://hub.docker.com/r/rocker/geospatial/>`_ on the instance.
 
+	.. code-block :: bash
+	
+		ezd
+		sudo usermod -aG docker $USER
+		exit
+		docker pull rocker/geospatial
+		docker run -d -p 8787:8787 rocker/geospatial
+
 Third, you can use `Anaconda <https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/rstudio.html>`_ 
 
 Here we are going to use ``ezj`` to install both Anaconda (Jupyter) and R
