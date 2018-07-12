@@ -446,11 +446,18 @@ Restart the server
 
 	.. code-block :: bash	
 	
-		jupyter lab --no-browser --ip=127.0.0.1 --port=8888
+		jupyter lab --no-browser --ip=* --port=8888
+
 
 **Option 1: SSH tunnel**
 
 You must have the ability to use ``ssh`` on your localhost to use this method.
+
+1. Start Jupyter
+
+	.. code-block :: bash	
+	
+		jupyter lab --no-browser --ip=127.0.0.1 --port=8888
 
 2. Open a new terminal on your localhost. 
 
@@ -467,6 +474,8 @@ You must have the ability to use ``ssh`` on your localhost to use this method.
 **Option 2: Caddy**
 
 You can use this method with ``tmux`` in the Web Shell
+
+1. Follow the same step #1 above
 
 2. In the terminal start a new ``tmux`` session. Then copy/paste the following:
 
