@@ -77,6 +77,12 @@ Google Drive requires port ``8888`` or ``8889`` with port forwarding to work
 
 CyVerse has a developed a `Jupyter Lab iRODS <https://www.npmjs.com/package/@towicode/jupyterlab_irods>`_ client similar to the Google Drive extension.
 
+Update to the latest version of Jupyter Lab
+
+        .. code-block :: bash
+	
+		conda install -c conda-forge jupyterlab 
+
 	.. code-block :: bash
 	
 		pip install jupyterlab_irods
