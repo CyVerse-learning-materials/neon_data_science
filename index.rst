@@ -6,6 +6,8 @@
 NEON Data Science Institute 2018
 ================================
 
+`2018-07-12 PREZI <https://prezi.com/view/FANdmLYMkyXCwCZYsqXC/>`_
+
 ..
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
     sharing data ####
