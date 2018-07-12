@@ -38,7 +38,7 @@ Data Download
       - `Jupyter Client <https://www.npmjs.com/package/@towicode/jupyterlab_irods>`_
     * - CyberDuck
       - File Share UI
-      - `Using with CyVerse <http://cyberduck-quickstart.readthedocs.io/en/latest/>`_
+      - `Using with CyVerse <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_
     * - Guacamole 
       - Atmosphere Browser Tabs
       - 
@@ -145,7 +145,7 @@ Enter the following:
 
 CyberDuck is a GUI client that works in Windows and Mac OS X. It can connect to almost every type of proximate file sharing system (DropBox, Drive, AWS S3, SFTP, iRODS, etc).
 
-`Using CyVerse and CyberDuck <http://cyberduck-quickstart.readthedocs.io/en/latest/#>`_
+`Using CyVerse and CyberDuck <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store#>`_
 
 CyberDuck also has a `CLI client <https://duck.sh/>`_ that can be used in Linux.
 
