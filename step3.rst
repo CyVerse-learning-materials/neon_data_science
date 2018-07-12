@@ -96,7 +96,6 @@ After you've set up `Cyberduck to access your CyVerse DataStore <http://cyberduc
 	
 	It is strongly suggested you use the `Cyberduck CLI tool <https://duck.sh>`_ to move files between two remote data stores. 
 
-
 *Jupyter Lab Google Drive Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -104,20 +103,12 @@ Google Drive will ask for some authentication through your browser with a token.
 
 If you have any data on Google Drive, you can drag and drop them onto your VM.
 
-
 *Jupyter Lab iRODS Client*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After you've authenticated to CyVerse, you will be able to view your data store files.
 
 The `Jupyter iRODS Client <https://www.npmjs.com/package/@towicode/jupyterlab_irods>`_ is not suitable for downloading hundreds of files, but it is useful for finding files and copying their URLs.
-
-  .. code-block :: bash
-  
-	pip install jupyterlab_irods
-	jupyter serverextension enable --py jupyterlab_irods
-	jupyter labextension install @towicode/jupyterlab_irods
-
 
 ..
 	#### Comment: Suggested style guide:
