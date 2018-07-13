@@ -267,7 +267,6 @@ If you're on an instance which already has Anaconda installed, you'll still need
 		.. code-block :: bash
 			
 			python -m pip install ipykernel
-			python -m ipykernel install --user
 			
 		.. code-block :: bash
 
