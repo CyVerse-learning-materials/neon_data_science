@@ -440,7 +440,7 @@ Restart the server
 
 	To ensure your session doesn't die when you close your terminal use `tmux` or `screen` to start your remote sessions and to detach the screen before exiting.
 
-	- detach screen: `ctrl + b` then `ctrl + d`
+	- detach screen: `ctrl + b` then `d`
 
 	- list tmux sessions: ``tmux ls``
 
